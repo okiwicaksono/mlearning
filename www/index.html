@@ -1,84 +1,170 @@
-<!DOCTYPE html>
+<!--
+@created by : jagadijo@gmail.com
+-->
+<!DOCTYPE HTML>
 <html>
-<head>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>jQuery Mobile: Demos and Documentation</title>
-
-	<link rel="stylesheet"  href="jquery.mobile/jquery.mobile-1.1.0.css" />
-	<link rel="stylesheet" href="docs/assets/css/jqm-docs.css" />
-	<link rel="stylesheet" href="docsdemos-style-override.css" />
-	<script type="text/javascript" src="jquery.mobile/jquery-1.7.2.min"></script>
-	<script type="text/javascript" src="jquery.mobile/jquery.mobile-1.1.0.js"></script>
-	<!-- Uncomment following line to access PhoneGap APIs (not necessary to use PhoneGap to package web app) -->
-	<!-- <script type="text/javascript" charset="utf-8" src="cordova-1.9.0.js"></script>-->
-
-	
-
-	<!-- CDN Respositories: For production, replace lines above with these uncommented minified versions -->
-	<!-- <link rel="stylesheet" href="http://code.jquery.com/mobile/1.1.0/jquery.mobile-1.1.0.min.css" />-->
-	<!-- <script src="http://code.jquery.com/jquery-1.7.2.min.js"></script>-->
-	<!-- <script src="http://code.jquery.com/mobile/1.1.0/jquery.mobile-1.1.0.min.js"></script>-->
-	</head> 
-<body> 
-<div data-role="page" id="jqm-home" class="type-home">
-	<div data-role="content">
-		
-		
-		<div class="content-secondary">
-	
-			<div id="jqm-homeheader">
-				<h1 id="jqm-logo"><img src="docs/assets/images/jquery-logo.png" alt="jQuery Mobile Framework" /></h1>
-				<p>A Touch-Optimized Web Framework for Smartphones &amp; Tablets</p>
-				<p id="jqm-version">Beta Release</p>
-			</div>
-	
-	
-			<p class="intro"><strong>Welcome.</strong> Browse the jQuery Mobile components and learn how to make rich, accessible, touch-friendly websites and apps.</p>
-			
-			<ul data-role="listview" data-inset="true" data-theme="c" data-dividertheme="f">
-				<li data-role="list-divider">Overview</li>
-				<li><a href="docs/about/intro.html">Intro to jQuery Mobile</a></li>
-				<li><a href="docs/about/features.html">Features</a></li>
-				<li><a href="docs/about/accessibility.html">Accessibility</a></li>
-				<li><a href="docs/about/platforms.html">Supported platforms</a></li>
-			</ul>
-			
-		</div><!--/content-primary-->	
-		
-		<div class="content-primary">
-			<nav>
-				
-		
-				<ul data-role="listview" data-inset="true" data-theme="c" data-dividertheme="b">
-					<li data-role="list-divider">Components</li>
-					<li><a href="docs/pages/index.html">Pages &amp; dialogs</a></li>
-					<li><a href="docs/toolbars/index.html">Toolbars</a></li>
-					<li><a href="docs/buttons/index.html">Buttons</a></li>
-					<li><a href="docs/content/index.html">Content formatting</a></li>
-					<li><a href="docs/forms/index.html">Form elements</a></li>
-					<li><a href="docs/lists/index.html">List views</a></li>
-					
-					<li data-role="list-divider">API</li>
-					<li><a href="docs/api/globalconfig.html">Configuring defaults</a></li>
-					<li><a href="docs/api/events.html">Events</a></li>
-					<li><a href="docs/api/methods.html">Methods &amp; Utilities</a></li>
-					<li><a href="docs/api/mediahelpers.html">Responsive Layout</a></li> 
-					<li><a href="docs/api/themes.html">Theme framework</a></li>
-		
-				
-				</ul>
-			</nav>
-		</div>
-
-		
-
-	</div>
-	
-	<div data-role="footer" class="footer-docs" data-theme="c">
-			<p>&copy; 2011 The jQuery Project</p>
-	</div>	
-	
-</div>
-</body>
+   <head>
+      <title>mLEARNING</title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+      <!-- FontAwesome - http://fortawesome.github.io/Font-Awesome/ -->
+      <link rel="stylesheet" href="css/font-awesome.min.css" />
+      <!-- jQueryMobileCSS - original without styling -->
+      <link rel="stylesheet" href="css/jquery.mobile-1.4.3.min.css" />
+      <!-- nativeDroid core CSS -->
+      <link rel="stylesheet" href="css/jquerymobile.nativedroid.css" />
+      <!-- nativeDroid: Light/Dark -->
+      <link rel="stylesheet" href="css/jquerymobile.nativedroid.light.css"  id='jQMnDTheme' />
+      <!-- nativeDroid: Color Schemes -->
+      <link rel="stylesheet" href="css/jquerymobile.nativedroid.color.blue.css" id='jQMnDColor' />
+      <!-- jQuery / jQueryMobile Scripts -->
+	   <script src="js/jquery-1.9.1.min.js"></script>
+	   <script src="js/jquery.mobile-1.4.3.min.js"></script>
+   </head>
+   <body>
+      <div id="index" data-role="page" data-theme='b'>
+         <div data-role="header" data-position="fixed" data-tap-toggle="false" data-theme='b'>
+            <h1>mLEARNING</h1>
+            <a href="#index" data-ajax='false' ><i class='fa fa-android'></i></a>
+         </div>
+         <div data-role="content">
+            <div class='inset'>
+               <h3>Giving Opinion</h3>
+               It's about expression, opinion, point of view, think, agree or disagree, problem and solution, persuation,  and tag question...
+               <a href="#mainmenu" data-transition="slide"><button type="button" data-inline='false'>Next</button></a>
+            </div>
+         </div>
+      </div>
+      <div id="mainmenu" data-role="page" data-theme='b'>
+         <div data-role="header" data-position="fixed" data-tap-toggle="false" data-theme='b'>
+            <h1>mLEARNING</h1>
+            <a href="#index" data-ajax='false' ><i class='fa fa-android'></i></a>
+         </div>
+         <div data-role="content">
+            <div class='inset'>
+               <h3>Menu Utama</h3>
+               <ul data-role="listview" data-inset="false" data-icon="false" data-divider-theme="b">
+                  <li>
+                     <a href="#direction" data-transition="slide"><i class='fa fa-angle-right'></i> Petunjuk Belajar</a>
+                  </li>
+                  <li>
+                     <a href="#objective" data-transition="slide"><i class='fa fa-angle-right'></i> Tujuan Belajar</a>
+                  </li>
+                  <li>
+                     <a href="#materi" data-transition="slide"><i class='fa fa-angle-right'></i> Materi</a>
+                  </li>
+                  <li>
+                     <a href="#evaluation" data-transition="slide"><i class='fa fa-angle-right'></i> Evaluasi</a>
+                  </li>
+                  <li>
+                     <a href="#profile" data-transition="slide"><i class='fa fa-angle-right'></i> Profil Pengembang</a>
+                  </li>
+               </ul>
+            </div>
+         </div>
+      </div>
+      <div id="direction" data-role="page" data-theme='b'>
+         <div data-role="header" data-position="fixed" data-tap-toggle="false" data-theme='b'>
+            <h1>mLEARNING</h1>
+            <a href="#index" data-ajax='false' ><i class='fa fa-android'></i></a>
+         </div>
+         <div data-role="content">
+            <div class='inset'>
+               <h3>Petunjuk Belajar / Directions</h3>
+               <ul>
+                  <li>Baca dan pahami Tujuan Belajar sebelum membuka menu Materi</li>
+                  <li>Pelajarilah materi secara urut</li>
+                  <li>Pahami setiap materi dengan baik, ulangi hingga kamu benar-benar menguasainya</li>
+                  <li>Pastikan kamu sudah memahami semua materi, selanjutnya kamu bisa masuk ke menu evaluasi untuk mengukur tingkat pemahaman materi ini.</li>
+                  <li>Jangan bosan untuk belajar, karena kesuksesan bukanlah hal instan melainkan rutinitas.</li>
+               </ul>
+            </div>
+         </div>
+      </div>
+      <div id="objective" data-role="page" data-theme='b'>
+         <div data-role="header" data-position="fixed" data-tap-toggle="false" data-theme='b'>
+            <h1>mLEARNING</h1>
+            <a href="#index" data-ajax='false' ><i class='fa fa-android'></i></a>
+         </div>
+         <div data-role="content">
+            <div class='inset'>
+               <h3>Tujuan Belajar / Objectives</h3>
+               By exploring this unit, students are expected to :
+               <ul>
+                  <li>Antusiasm to learn English and be grateful to God about English as an international language.</li>
+                  <li>Demonstrate honest, disciplinary, responsible, and confident conducts to carry out transactional communication with teachers and peers.</li>
+                  <li>Analyze the social function, generic structure, and language elements of giving opinion.</li>
+                  <li>Arrange simple oral and written texts to give opinion.</li>
+                  <li>Inquire various ways of giving opinion as well as their differences from those in Indonesian.</li>
+                  <li>Demonstrate and be engaged in various activities of inquiring and giving opinion.</li>
+                  <li>Have knowledge about the use of tag questions.</li>
+                  <li>Understand main ideas, specific information, and detailed information in hortatory exposition texts.</li>
+               </ul>
+            </div>
+         </div>
+      </div>
+      <div id="materi" data-role="page" data-theme='b'>
+         <div data-role="header" data-position="fixed" data-tap-toggle="false" data-theme='b'>
+            <h1>mLEARNING</h1>
+            <a href="#index" data-ajax='false' ><i class='fa fa-android'></i></a>
+         </div>
+         <div data-role="content">
+            <div class='inset'>
+               <h3>Materi</h3>
+              	<ul data-role="listview" data-inset="false" data-icon="false" data-divider-theme="b">
+                  <li>
+                     <a href="#fact" data-transition="slide" data-ajax="true"><i class='fa fa-angle-right'></i> Fact VS Opinion</a>
+                  </li>
+                  <li>
+                     <a href="#opinion" data-transition="slide" data-ajax="true"><i class='fa fa-angle-right'></i> Giving Opinion</a>
+                  </li>
+                  <li>
+                     <a href="materi.html" data-transition="slide" data-ajax="false"><i class='fa fa-angle-right'></i> Expression</a>
+                  </li>
+                  <li>
+                     <a href="materi.html" data-transition="slide" data-ajax="false"><i class='fa fa-angle-right'></i> Problem & Solution</a>
+                  </li>
+                  <li>
+                     <a href="materi.html" data-transition="slide" data-ajax="false"><i class='fa fa-angle-right'></i> Tag Question</a>
+                  </li>
+               </ul>
+            </div>
+         </div>
+      </div>
+      <div id="evaluation" data-role="page" data-theme='b'>
+         <div data-role="header" data-position="fixed" data-tap-toggle="false" data-theme='b'>
+            <h1>mLEARNING</h1>
+            <a href="#index" data-ajax='false' ><i class='fa fa-android'></i></a>
+         </div>
+         <div data-role="content">
+            <div class='inset'>
+               <h3>Evaluasi / Evaluation</h3>
+               <ul data-role="listview" data-inset="false" data-icon="false" data-divider-theme="b">
+                  <li>
+                     <a href="###" data-ajax="false"><i class='fa fa-angle-right'></i> Formative Evaluation</a>
+                  </li>
+                  <li>
+                     <a href="###" data-ajax="false"><i class='fa fa-angle-right'></i>	Self Reflection</a>
+                  </li>
+               </ul>
+            </div>
+         </div>
+      </div>
+      <div id="profile" data-role="page" data-theme='b'>
+         <div data-role="header" data-position="fixed" data-tap-toggle="false" data-theme='b'>
+            <h1>mLEARNING</h1>
+            <a href="#index" data-ajax='false' ><i class='fa fa-android'></i></a>
+         </div>
+         <div data-role="content">
+            <div class='inset'>
+               <h3>Profil Pengembang / About Developer</h3><hr/>
+               Singgih Subiyantoro<hr/>
+               NIM: S811308035<hr/>
+               Program Studi Teknologi Pendidikan<hr/>
+               Fakultas Keguruan dan Ilmu Pendidikan<hr/>
+               Universitas Sebelas Maret<hr/>
+               Surakarta.<hr/>
+            </div>
+         </div>
+      </div>
+   </body>
 </html>
