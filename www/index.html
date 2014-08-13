@@ -15,10 +15,10 @@
       <!-- nativeDroid: Light/Dark -->
       <link rel="stylesheet" href="css/jquerymobile.nativedroid.light.css"  id='jQMnDTheme' />
       <!-- nativeDroid: Color Schemes -->
-      <link rel="stylesheet" href="css/jquerymobile.nativedroid.color.blue.css" id='jQMnDColor' />
+      <link rel="stylesheet" href="css/jquerymobile.nativedroid.color.green.css" id='jQMnDColor' />
       <!-- jQuery / jQueryMobile Scripts -->
-	   <script src="js/jquery-1.9.1.min.js"></script>
-	   <script src="js/jquery.mobile-1.4.3.min.js"></script>
+      <script src="js/jquery-1.9.1.min.js"></script>
+      <script src="js/jquery.mobile-1.4.3.min.js"></script>
    </head>
    <body>
       <div id="index" data-role="page" data-theme='b'>
@@ -30,7 +30,7 @@
             <div class='inset'>
                <h3>Giving Opinion</h3>
                It's about expression, opinion, point of view, think, agree or disagree, problem and solution, persuation,  and tag question...
-               <a href="#mainmenu" data-transition="slide"><button type="button" data-inline='false'>Next</button></a>
+               <a href="#mainmenu" data-transition="slide" data-inline='false' data-role="button">Next</a>
             </div>
          </div>
       </div>
@@ -110,12 +110,14 @@
          <div data-role="content">
             <div class='inset'>
                <h3>Materi</h3>
-              	<ul data-role="listview" data-inset="false" data-icon="false" data-divider-theme="b">
+               <a href="materi.html" data-transition="slide" data-role='button' data-inline='false' data-ajax="false">Mulai</a>
+               <!--
+               <ul data-role="listview" data-inset="false" data-icon="false" data-divider-theme="b">
                   <li>
-                     <a href="#fact" data-transition="slide" data-ajax="true"><i class='fa fa-angle-right'></i> Fact VS Opinion</a>
+                     <a href="materi.html" data-transition="slide" data-ajax="true"><i class='fa fa-angle-right'></i> Fact VS Opinion</a>
                   </li>
                   <li>
-                     <a href="#opinion" data-transition="slide" data-ajax="true"><i class='fa fa-angle-right'></i> Giving Opinion</a>
+                     <a href="materi.html#opinion" data-transition="slide" data-ajax="true"><i class='fa fa-angle-right'></i> Giving Opinion</a>
                   </li>
                   <li>
                      <a href="materi.html" data-transition="slide" data-ajax="false"><i class='fa fa-angle-right'></i> Expression</a>
@@ -127,6 +129,7 @@
                      <a href="materi.html" data-transition="slide" data-ajax="false"><i class='fa fa-angle-right'></i> Tag Question</a>
                   </li>
                </ul>
+            	-->
             </div>
          </div>
       </div>
@@ -138,14 +141,7 @@
          <div data-role="content">
             <div class='inset'>
                <h3>Evaluasi / Evaluation</h3>
-               <ul data-role="listview" data-inset="false" data-icon="false" data-divider-theme="b">
-                  <li>
-                     <a href="###" data-ajax="false"><i class='fa fa-angle-right'></i> Formative Evaluation</a>
-                  </li>
-                  <li>
-                     <a href="###" data-ajax="false"><i class='fa fa-angle-right'></i>	Self Reflection</a>
-                  </li>
-               </ul>
+               <a href="evaluasi.html" data-transition="slide" data-role='button' data-inline='false' data-ajax="false">Mulai</a>
             </div>
          </div>
       </div>

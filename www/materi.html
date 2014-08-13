@@ -9,39 +9,122 @@
       <!-- FontAwesome - http://fortawesome.github.io/Font-Awesome/ -->
       <link rel="stylesheet" href="css/font-awesome.min.css" />
       <!-- jQueryMobileCSS - original without styling -->
-      <link rel="stylesheet" href="css/jquery.mobile-1.4.3.min" />
+      <link rel="stylesheet" href="css/jquery.mobile-1.4.3.min.css" />
       <!-- nativeDroid core CSS -->
       <link rel="stylesheet" href="css/jquerymobile.nativedroid.css" />
       <!-- nativeDroid: Light/Dark -->
       <link rel="stylesheet" href="css/jquerymobile.nativedroid.light.css"  id='jQMnDTheme' />
       <!-- nativeDroid: Color Schemes -->
-      <link rel="stylesheet" href="css/jquerymobile.nativedroid.color.blue.css" id='jQMnDColor' />
+      <link rel="stylesheet" href="css/jquerymobile.nativedroid.color.green.css" id='jQMnDColor' />
+      <!-- jQuery / jQueryMobile Scripts -->
+      <script src="js/jquery-1.9.1.min.js"></script>
+      <script src="js/jquery.mobile-1.4.3.min.js"></script>
    </head>
    <body>
-      <div id="fact" data-role="page" data-theme='b'>
+      <div id="facts" data-role="page" data-theme='b'>
          <div data-role="header" data-position="fixed" data-tap-toggle="false" data-theme='b'>
             <h1>mLEARNING</h1>
-            <a href="#index" data-ajax='false' ><i class='fa fa-android'></i></a>
+            <a href="index.html" data-ajax='false' ><i class='fa fa-android'></i></a>
+         </div>
+         <div data-role="panel" data-display="push" id="mypanel1" data-theme="b">
+            <ul data-role="listview">
+               <li>Materi</li>
+               <li data-icon='false'><a href="#">Fact VS Opinion</a></li>
+               <li data-icon='false'><a href="#op" data-transition="slide">Giving Opinion</a></li>
+               <li data-icon='false'><a href="#expression" data-transition="slide">Expression</a></li>
+               <li data-icon='false'><a href="#solution" data-transition="slide">Problem & Solution</a></li>
+               <li data-icon='false'><a href="#tag" data-transition="slide">Tag Question</a></li>
+            </ul>
          </div>
          <div data-role="content">
             <div class='inset'>
-               <h3>Fact VS Opinion</h3>
+               <a href="#mypanel1" data-role='button' data-inline='true'><i class='lIcon fa fa-bars'></i>Fact VS Opinion</a>
             </div>
          </div>
       </div>
-      <div id="opinion" data-role="page" data-theme='b'>
+      <div id="op" data-role="page" data-theme='b'>
          <div data-role="header" data-position="fixed" data-tap-toggle="false" data-theme='b'>
             <h1>mLEARNING</h1>
-            <a href="#index" data-ajax='false' ><i class='fa fa-android'></i></a>
+            <a href="index.html" data-ajax='false' ><i class='fa fa-android'></i></a>
+         </div>
+         <div data-role="panel" data-display="push" id="mypanel2" data-theme="b">
+            <ul data-role="listview">
+               <li>Materi</li>
+               <li data-icon='false'><a href="#facts" data-transition="slide">Fact VS Opinion</a></li>
+               <li data-icon='false'><a href="#">Giving Opinion</a></li>
+               <li data-icon='false'><a href="#expression" data-transition="slide">Expression</a></li>
+               <li data-icon='false'><a href="#solution" data-transition="slide">Problem & Solution</a></li>
+               <li data-icon='false'><a href="#tag" data-transition="slide">Tag Question</a></li>
+            </ul>
          </div>
          <div data-role="content">
             <div class='inset'>
-               <h3>Giving Opinion</h3>
+               <a href="#mypanel2" data-role='button' data-inline='true'><i class='lIcon fa fa-bars'></i>Giving Opinion</a>
+            </div>
+         </div>
+      </div>
+      <div id="expression" data-role="page" data-theme='b'>
+         <div data-role="header" data-position="fixed" data-tap-toggle="false" data-theme='b'>
+            <h1>mLEARNING</h1>
+            <a href="index.html" data-ajax='false' ><i class='fa fa-android'></i></a>
+         </div>
+         <div data-role="panel" data-display="push" id="mypanel3" data-theme="b">
+            <ul data-role="listview">
+               <li>Materi</li>
+               <li data-icon='false'><a href="#facts" data-transition="slide">Fact VS Opinion</a></li>
+               <li data-icon='false'><a href="#op">Giving Opinion</a></li>
+               <li data-icon='false'><a href="#" data-transition="slide">Expression</a></li>
+               <li data-icon='false'><a href="#solution" data-transition="slide">Problem & Solution</a></li>
+               <li data-icon='false'><a href="#tag" data-transition="slide">Tag Question</a></li>
+            </ul>
+         </div>
+         <div data-role="content">
+            <div class='inset'>
+               <a href="#mypanel3" data-role='button' data-inline='true'><i class='lIcon fa fa-bars'></i>Expression</a>
+            </div>
+         </div>
+      </div>
+      <div id="solution" data-role="page" data-theme='b'>
+         <div data-role="header" data-position="fixed" data-tap-toggle="false" data-theme='b'>
+            <h1>mLEARNING</h1>
+            <a href="index.html" data-ajax='false' ><i class='fa fa-android'></i></a>
+         </div>
+         <div data-role="panel" data-display="push" id="mypanel4" data-theme="b">
+            <ul data-role="listview">
+               <li>Materi</li>
+               <li data-icon='false'><a href="#facts" data-transition="slide">Fact VS Opinion</a></li>
+               <li data-icon='false'><a href="#op">Giving Opinion</a></li>
+               <li data-icon='false'><a href="#expression" data-transition="slide">Expression</a></li>
+               <li data-icon='false'><a href="#" data-transition="slide">Problem & Solution</a></li>
+               <li data-icon='false'><a href="#tag" data-transition="slide">Tag Question</a></li>
+            </ul>
+         </div>
+         <div data-role="content">
+            <div class='inset'>
+               <a href="#mypanel4" data-role='button' data-inline='true'><i class='lIcon fa fa-bars'></i>Problem & Solution</a>
+            </div>
+         </div>
+      </div>
+      <div id="tag" data-role="page" data-theme='b'>
+         <div data-role="header" data-position="fixed" data-tap-toggle="false" data-theme='b'>
+            <h1>mLEARNING</h1>
+            <a href="index.html" data-ajax='false' ><i class='fa fa-android'></i></a>
+         </div>
+         <div data-role="panel" data-display="push" id="mypanel5" data-theme="b">
+            <ul data-role="listview">
+               <li>Materi</li>
+               <li data-icon='false'><a href="#facts" data-transition="slide">Fact VS Opinion</a></li>
+               <li data-icon='false'><a href="#op">Giving Opinion</a></li>
+               <li data-icon='false'><a href="#expression" data-transition="slide">Expression</a></li>
+               <li data-icon='false'><a href="#solution" data-transition="slide">Problem & Solution</a></li>
+               <li data-icon='false'><a href="#" data-transition="slide">Tag Question</a></li>
+            </ul>
+         </div>
+         <div data-role="content">
+            <div class='inset'>
+               <a href="#mypanel5" data-role='button' data-inline='true'><i class='lIcon fa fa-bars'></i>Tag Question</a>
             </div>
          </div>
       </div>
    </body>
-   <!-- jQuery / jQueryMobile Scripts -->
-   <script src="js/jquery-1.9.1.min.js"></script>
-   <script src="js/jquery.mobile-1.4.3.min.js"></script>
 </html>
