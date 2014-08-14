@@ -342,7 +342,7 @@ img.ui-li-icon {
 }
 
 .ui-content h1,.ui-content h2,.ui-content h3,.ui-content h4,.ui-content h5,.ui-content h6,.ui-content p {
-	font-weight: 100;
+	font-weight: inherit;
 	margin: 7px 0px 7px 0px;
 }
 

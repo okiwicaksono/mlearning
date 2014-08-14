@@ -21,6 +21,7 @@
       <script src="js/jquery.mobile-1.4.3.min.js"></script>
    </head>
    <body>
+   	<form>
       <div id="facts" data-role="page" data-theme='b'>
          <div data-role="header" data-position="fixed" data-tap-toggle="false" data-theme='b'>
             <h1>mLEARNING</h1>
@@ -39,6 +40,19 @@
          <div data-role="content">
             <div class='inset'>
                <a href="#mypanel1" data-role='button' data-inline='true'><i class='lIcon fa fa-bars'></i>Fact VS Opinion</a>
+               	<p>Fact is something that has really occurred or is actually the case. Whereas an opinion are mostly subjective which means that they are not based on absolute fact but on emotions and interpretation of facts.</p>
+               	<p>For example, look at the picture!</p>
+               	<p><strong>Fact</strong> : Floods hit the town. (reality, based on photo)</p>
+               	<p><strong>Opinion</strong>	: Many people don’t care about their town. (not real, only people’s opinion)</p>
+						<p><strong>Quiz 1</strong>:<p>
+						<p>Where are the facts, and where are the opinions?</p>
+						<fieldset data-role="controlgroup">
+							<input type="radio" name="radio-choice-1" id="radio-choice-1b" value="quiz1A">
+							<label for="radio-choice-1b">A. TV is the best thing in the world.</label>
+							<input type="radio" name="radio-choice-1" id="radio-choice-2b" value="quiz1B">
+							<label for="radio-choice-2b">B.	TV is bad for your eyes when watched for too long.</label>
+                  </fieldset>
+						<a href="#op" data-transition="slide" data-inline='false' data-role="button">Next</a>
             </div>
          </div>
       </div>
@@ -126,5 +140,6 @@
             </div>
          </div>
       </div>
+   </form>
    </body>
 </html>
