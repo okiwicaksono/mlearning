@@ -41,7 +41,6 @@
             <div data-role="content">
                <div class='inset'>
                   <a href="#mypanel1" data-role='button' data-inline='true'><i class='lIcon fa fa-bars'></i>Fact VS Opinion</a>
-
                   <p>
                   Fact is something that has really occurred or is actually the case. Whereas an opinion are mostly subjective which means that they are not based on absolute fact but on emotions and interpretation of facts.
                   </p>
@@ -264,7 +263,7 @@
                   <p>
                   <strong>Quiz 3 :</strong><br/>
                   For exercise, please write your opinion and the reason about the picture below!<br/>
-						<img src="img/7.jpg" alt="" style="max-width:100%;height:auto;">
+                  <img src="img/7.jpg" alt="" style="max-width:100%;height:auto;">
                   <label for="textarea2b">Your opinion :</label>
                   <textarea name="opinion" id="textarea1" placeholder="Your opinion is . . ."></textarea>
                   </p>
@@ -295,7 +294,7 @@
                   <p>
                   <strong>Problem:</strong> People texting while driving.<br/>
                   <strong>Solution:</strong> Stop it. Turn off the mobile phone and try to drive slowly.
-                  <img src="img/3.jpg" alt="" style="max-width:100%;height:auto;">	
+                  <img src="img/3.jpg" alt="" style="max-width:100%;height:auto;">
                   </p>
                   <p>
                   <strong>Problem:</strong> Someone getting bullied.<br/>
@@ -354,12 +353,12 @@
                         When the statement is in negative-form, the tag question should be in
                         <input type="text" name="name2" id="name2" value="" placeholder="Your answer is...">
                      </li>
-                     <!-- 
-                     <li>
-                        When the statement has an auxiliary, the tag repeats
-                        <input type="text" name="name3" id="name3" value="" placeholder="Your answer is...">
-                     </li> 
-                  	-->
+                     <!--
+                                                               <li>
+                                                                        When the statement has an auxiliary, the tag repeats
+                                                                        <input type="text" name="name3" id="name3" value="" placeholder="Your answer is...">
+                                                               </li>
+                     -->
                   </ul>
                   </p>
                   <a href="#result" data-transition="slide" data-inline='false' data-role="button">Next</a>
@@ -385,10 +384,37 @@
             <div data-role="content">
                <div class='inset'>
                   <a href="#mypanel6" data-role='button' data-inline='true'><i class='lIcon fa fa-bars'></i>Result</a>
-                  <a href="" data-role="button" onclick="alert('result here');">Show Result</a>
+                  <a href="#" data-role="button" id="checkresult">Show Your Result</a>
+                  <p>Score : <span id="viewresult" style="font-weight:bold;"></span></p>
+                  <p>Expression Answer :<p>
+                  <p style="font-weight:bold;" id="answer1"><p>
+                  <p>Problem & Solution Answer :<p>
+                  <p style="font-weight:bold;" id="answer2"><p>
+                  <p>Tag Question Answer :<p>
+                  <p style="font-weight:bold;" id="answer3"><p>
                </div>
             </div>
          </div>
       </form>
+      <script type="text/javascript">
+         document.getElementById("checkresult").onclick = validate;
+            function validate() {
+               var rdo1, rdo2, rdo3, rdo4;
+               var expr, opini, tags1, tags2;
+               rdo1 = ($('input[name="rdo1"]:checked').val()=='b')?1:0;
+               rdo2 = ($('input[name="rdo2"]:checked').val()=='a')?1:0;
+               rdo3 = ($('input[name="rdo3"]:checked').val()=='b')?1:0;
+               rdo4 = ($('input[name="rdo4"]:checked').val()=='c')?1:0;
+               rdo4 = ($('input[name="rdo4"]:checked').val()=='c')?1:0;
+               expr = ($('textarea[name="opinion"]').val()=='')?'. . .':$('textarea[name="opinion"]').val();
+               opini = ($('textarea[name="solution"]').val()=='')?'. . .':$('textarea[name="solution"]').val();
+               tags1 = ($('input[name="name1"]').val()=='')?'. . .':$('input[name="name1"]').val();
+               tags2 = ($('input[name="name2"]').val()=='')?'. . .':$('input[name="name2"]').val();
+               $("#viewresult").html(rdo1+rdo2+rdo3+rdo4);
+               $("#answer1").html(expr);
+               $("#answer2").html(opini);
+               $("#answer3").html(tags1 + "<br/>" + tags2);
+            }
+      </script>
    </body>
 </html>
