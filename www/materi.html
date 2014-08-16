@@ -21,348 +21,374 @@
       <script src="js/jquery.mobile-1.4.3.min.js"></script>
    </head>
    <body>
-   	<form>
-      <div id="facts" data-role="page" data-theme='b'>
-         <div data-role="header" data-position="fixed" data-tap-toggle="false" data-theme='b'>
-            <h1>mLEARNING</h1>
-            <a href="index.html" data-ajax='false' ><i class='fa fa-android'></i></a>
-         </div>
-         <div data-role="panel" data-display="push" id="mypanel1" data-theme="b">
-            <ul data-role="listview">
-               <li>Materi</li>
-               <li data-icon='false'><a href="#">Fact VS Opinion</a></li>
-               <li data-icon='false'><a href="#op" data-transition="slide">Giving Opinion</a></li>
-               <li data-icon='false'><a href="#expression" data-transition="slide">Expression</a></li>
-               <li data-icon='false'><a href="#solution" data-transition="slide">Problem & Solution</a></li>
-               <li data-icon='false'><a href="#tag" data-transition="slide">Tag Question</a></li>
-            </ul>
-         </div>
-         <div data-role="content">
-            <div class='inset'>
-               <a href="#mypanel1" data-role='button' data-inline='true'><i class='lIcon fa fa-bars'></i>Fact VS Opinion</a>
-               	
-               <p>
-            		Fact is something that has really occurred or is actually the case. Whereas an opinion are mostly subjective which means that they are not based on absolute fact but on emotions and interpretation of facts.
-               </p>
-               <p>
-               	For example, look at the picture!<br/>
-               	<strong>Fact</strong> : Floods hit the town. (reality, based on photo)<br/>
-               	<strong>Opinion</strong>	: Many people don’t care about their town. (not real, only people’s opinion)
-               </p>
-               <p>
-						<strong>Quiz 1 : </strong><br/>
-						Where are the facts, and where are the opinions?
-						<fieldset data-role="controlgroup">
-							<input type="radio" name="radio[1]" id="radio-choice-1b" value="1">
-							<label for="radio-choice-1b">A. TV is the best thing in the world.</label>
-							<input type="radio" name="radio[1]" id="radio-choice-2b" value="2">
-							<label for="radio-choice-2b">B. TV is bad for your eyes when watched for too long.</label>
+      <form action="#">
+         <div id="facts" data-role="page" data-theme='b'>
+            <div data-role="header" data-position="fixed" data-tap-toggle="false" data-theme='b'>
+               <h1>mLEARNING</h1>
+               <a href="index.html" data-ajax='false' ><i class='fa fa-android'></i></a>
+            </div>
+            <div data-role="panel" data-display="push" id="mypanel1" data-theme="b">
+               <ul data-role="listview">
+                  <li>Materi</li>
+                  <li data-icon='false'><a href="#">Fact VS Opinion</a></li>
+                  <li data-icon='false'><a href="#op" data-transition="slide">Giving Opinion</a></li>
+                  <li data-icon='false'><a href="#expression" data-transition="slide">Expression</a></li>
+                  <li data-icon='false'><a href="#solution" data-transition="slide">Problem & Solution</a></li>
+                  <li data-icon='false'><a href="#tag" data-transition="slide">Tag Question</a></li>
+                  <li data-icon='false'><a href="#result" data-transition="slide">Result</a></li>
+               </ul>
+            </div>
+            <div data-role="content">
+               <div class='inset'>
+                  <a href="#mypanel1" data-role='button' data-inline='true'><i class='lIcon fa fa-bars'></i>Fact VS Opinion</a>
+
+                  <p>
+                  Fact is something that has really occurred or is actually the case. Whereas an opinion are mostly subjective which means that they are not based on absolute fact but on emotions and interpretation of facts.
+                  </p>
+                  <p>
+                  For example, look at the picture!<br/>
+                  <img src="img/2.jpg" alt="Floods hit the town" style="max-width:100%;height:auto;">
+                  <strong>Fact</strong> : Floods hit the town. (reality, based on photo)<br/>
+                  <strong>Opinion</strong>	: Many people don't care about their town. (not real, only people's opinion)
+                  </p>
+                  <p>
+                  <strong>Quiz 1 : </strong><br/>
+                  Where are the facts, and where are the opinions?
+                  <fieldset data-role="controlgroup">
+                     <input type="radio" name="rdo1" id="radio-choice-1b" value="a">
+                     <label for="radio-choice-1b">a. TV is the best thing in the world.</label>
+                     <input type="radio" name="rdo1" id="radio-choice-2b" value="b">
+                     <label for="radio-choice-2b">b. TV is bad for your eyes when watched for too long.</label>
                   </fieldset>
-                </p>
-						<a href="#op" data-transition="slide" data-inline='false' data-role="button">Next</a>
+                  </p>
+                  <a href="#op" data-transition="slide" data-inline='false' data-role="button">Next</a>
+               </div>
             </div>
          </div>
-      </div>
-
-      <div id="op" data-role="page" data-theme='b'>
-         <div data-role="header" data-position="fixed" data-tap-toggle="false" data-theme='b'>
-            <h1>mLEARNING</h1>
-            <a href="index.html" data-ajax='false' ><i class='fa fa-android'></i></a>
-         </div>
-         <div data-role="panel" data-display="push" id="mypanel2" data-theme="b">
-            <ul data-role="listview">
-               <li>Materi</li>
-               <li data-icon='false'><a href="#facts" data-transition="slide">Fact VS Opinion</a></li>
-               <li data-icon='false'><a href="#">Giving Opinion</a></li>
-               <li data-icon='false'><a href="#expression" data-transition="slide">Expression</a></li>
-               <li data-icon='false'><a href="#solution" data-transition="slide">Problem & Solution</a></li>
-               <li data-icon='false'><a href="#tag" data-transition="slide">Tag Question</a></li>
-            </ul>
-         </div>
-         <div data-role="content">
-            <div class='inset'>
-               <a href="#mypanel2" data-role='button' data-inline='true'><i class='lIcon fa fa-bars'></i>Giving Opinion</a>
-               <p>
-               Look at the picture and discuss the questions that follow please! And than shared to the others.<br/>
-               <ul>
-						<li>What are the people trying to convey?</li>
-						<li>Do you think they are expressing personal opinions?</li>
-						<li>What expressions do you use to inquire an opinion?</li>
-						<li>What expressions do you use to offer a different opinion?</li>
+         <div id="op" data-role="page" data-theme='b'>
+            <div data-role="header" data-position="fixed" data-tap-toggle="false" data-theme='b'>
+               <h1>mLEARNING</h1>
+               <a href="index.html" data-ajax='false' ><i class='fa fa-android'></i></a>
+            </div>
+            <div data-role="panel" data-display="push" id="mypanel2" data-theme="b">
+               <ul data-role="listview">
+                  <li>Materi</li>
+                  <li data-icon='false'><a href="#facts" data-transition="slide">Fact VS Opinion</a></li>
+                  <li data-icon='false'><a href="#">Giving Opinion</a></li>
+                  <li data-icon='false'><a href="#expression" data-transition="slide">Expression</a></li>
+                  <li data-icon='false'><a href="#solution" data-transition="slide">Problem & Solution</a></li>
+                  <li data-icon='false'><a href="#tag" data-transition="slide">Tag Question</a></li>
+                  <li data-icon='false'><a href="#result" data-transition="slide">Result</a></li>
                </ul>
-               </p>
-
-               <p>
-	               <strong>What is an opinion?</strong><br/>
-	               An opinion is the way you feel or think about something. Our opinion about something or someone is based on our perspective. Whenever we give or express our opinion it is important to give reasoning or an example to support our opinion.<br/><br/>
-            	</p>
-
-					<p>
-						<strong>Indicating Opinion</strong><br/>
-						I think…<br/>
-						In my opinion…<br/>
-						I feel…<br/>
-						to my mind…<br/>
-						I guess…<br/>
-						ect.<br/><br/>
-					</p>
-
-					<p>
-						<strong>Statement</strong><br/>
-						<strong>Student A:</strong> I don’t like playing tag because people end up fighting.<br/>
-						<strong>Student B:</strong> In my opinion, the government should provide means of sustenance for under privileged people instead of building tall towers.<br/><br/>
-					</p>
-
-					# Student A give a <strong>statement</strong> and Student B give an <strong>opinion</strong> about that statement.<br/><br/>
-
-					<p>
-						<strong>Quiz 2 :</strong><br/>
-						Give your opinions by completing the sentences positively or negatively. 
-						<ul>
-							<li>
-								Students . . . . . to use cellphones in the classroom.
-								<fieldset data-role="controlgroup">
-									<input type="radio" name="radio[2]" id="radio-choice-3b" value="3">
-									<label for="radio-choice-3b">a. shouldn’t be allow</label>
-									<input type="radio" name="radio[2]" id="radio-choice-4b" value="4">
-									<label for="radio-choice-4b">b. musn't be passed</label>
-									<input type="radio" name="radio[2]" id="radio-choice-5b" value="5">
-									<label for="radio-choice-5b">c. has got to be done</label>
-		                  </fieldset>
-							</li>
-							<li>
-								Laws . . . . . to control TV shows.
-								<fieldset data-role="controlgroup">
-									<input type="radio" name="radio[3]" id="radio-choice-6b" value="6">
-									<label for="radio-choice-6b">a. shouldn’t be allow</label>
-									<input type="radio" name="radio[3]" id="radio-choice-7b" value="7">
-									<label for="radio-choice-7b">b. musn't be passed</label>
-									<input type="radio" name="radio[3]" id="radio-choice-8b" value="8">
-									<label for="radio-choice-8b">c. has got to be done</label>
-		                  </fieldset>
-							</li>
-							<li>
-								Something . . . . . to stop bullying at schools.
-								<fieldset data-role="controlgroup">
-									<input type="radio" name="radio[4]" id="radio-choice-9b" value="9">
-									<label for="radio-choice-9b">a. shouldn’t be allow</label>
-									<input type="radio" name="radio[4]" id="radio-choice-10b" value="10">
-									<label for="radio-choice-10b">b. musn't be passed</label>
-									<input type="radio" name="radio[4]" id="radio-choice-11b" value="11">
-									<label for="radio-choice-11b">c. has got to be done</label>
-		                  </fieldset>
-							</li>
-						</ul>
-					</p>
-					<a href="#expression" data-transition="slide" data-inline='false' data-role="button">Next</a>
             </div>
-         </div>
-      </div>
-
-      <div id="expression" data-role="page" data-theme='b'>
-         <div data-role="header" data-position="fixed" data-tap-toggle="false" data-theme='b'>
-            <h1>mLEARNING</h1>
-            <a href="index.html" data-ajax='false' ><i class='fa fa-android'></i></a>
-         </div>
-         <div data-role="panel" data-display="push" id="mypanel3" data-theme="b">
-            <ul data-role="listview">
-               <li>Materi</li>
-               <li data-icon='false'><a href="#facts" data-transition="slide">Fact VS Opinion</a></li>
-               <li data-icon='false'><a href="#op">Giving Opinion</a></li>
-               <li data-icon='false'><a href="#" data-transition="slide">Expression</a></li>
-               <li data-icon='false'><a href="#solution" data-transition="slide">Problem & Solution</a></li>
-               <li data-icon='false'><a href="#tag" data-transition="slide">Tag Question</a></li>
-            </ul>
-         </div>
-         <div data-role="content">
-            <div class='inset'>
-               <a href="#mypanel3" data-role='button' data-inline='true'><i class='lIcon fa fa-bars'></i>Expression</a>
-               <p>Opinions can be expressed in the ways given below:</p>
-               <ul>
-               	<li>
-               		<strong>Personal Point of View</strong>
-               	<p>
-               		These expressions are used to show personal point of view.
-               	</p>
-							<strong>You can use this phrases:</strong><br/>
-						<p style="margin-left:20px;">
-							In my opinion…<br/>
-							I think…<br/>
-							Personally, I think…<br/>
-							According to me…<br/>
-							As I understand…<br/>
-							What I mean is…<br/>
-							To my mind…<br/>
-							As I see it…<br/>
-							ect.
-						</p>
-							<p>
-							<strong>For examples :</strong><br/>
-							<strong>In my opinion</strong>, big companies should pay less tax.<br/>
-							<strong>I think</strong> Yogyakarta is developing fast.
-							</p>
-               	</li>
-               	<li>
-               		<strong>General Point of view</strong>
-               		<p>These expressions are used to show general (some peoples) point of view. General point of view creates a balace in writing and helps to avoid absolute statements.</p>
-							<strong>You can use this phrases:</strong><br/>
-							<p style="margin-left:20px;">
-							Generally it is accepted…<br/>
-							Majority agree with…<br/>
-							It is considered…<br/>
-							Most people don’t agree…<br/>
-							Almost everyone…<br/>
-							Some people believe…<br/>
-							ect.
-							</p>
-							<p>
-								<strong>DID YOU KNOW?</strong><br/>
-								You can agree or disagree as long as you have reason for you opinion.
-							</p>
-               	</li>
-               	<li>
-               		<strong>Agreeing</strong>
-               		<p>These are some of the expressions used to express <strong>agreement with an opinion.</strong></p>
-							<strong>You can use this phrases:</strong><br/>
-							<p style="margin-left:20px;">
-								Of course.<br/>
-								I agree. I never thought of that.<br/>
-								Neither do I.<br/>
-								That’s a good point.<br/>
-								I think so too.<br/>
-								I agree with this opinion.<br/>
-								I couldn’t agree more.<br/>
-								ect.
-               		</p>
-               	</li>
-               	<li>
-               		<strong>Disagreeing</strong>
-               		<p>These are the expressions used to express <strong>disagreement with an opinion.</strong></p>
-							<strong>You can use this phrases:</strong><br/>
-							<p style="margin-left:20px;">
-								I disagree with you.<br/>
-								I think you are wrong.<br/>
-								I am sorry, I don’t agree with you.<br/>
-								I do not believe that.<br/>
-								By this I mean…<br/>
-								ect.
-               		</p>
-               		<p>
-               		For examples:<br/>
-							<strong>Statement:</strong><br/>
-								&nbsp;&nbsp;&nbsp;Using handphone should be banned in the schools.<br/>
-							<strong>Agree:</strong><br/>
-								&nbsp;&nbsp;&nbsp;<u>I totally agree</u> that using handphone should be banned in school.<br/>
-							<strong>Disagree:</strong><br/>
-								&nbsp;&nbsp;&nbsp;<u>I don’t agree</u> with you. Handphone is usful for student to develop their language skills.
-							<p><br/>
-							<p>
-								<strong>NOW, YOU KNOW</strong><br/>
-								Opinions can be expressed using mental verbs like believe, think, doubt, assume, feel,  ect.
-							</p>
-               	</li>
-               </ul>
-               <p>
-						<strong>Quiz 3 :</strong><br/>
-						For exercise, please write your opinion and the reason about the picture below!<br/>
-						
-						<label for="textarea2b">Your opinion :</label>
-                  <textarea name="opinion" id="textarea1" placeholder="Your opinion is . . ." required></textarea>
-					</p>
-					<a href="#solution" data-transition="slide" data-inline='false' data-role="button">Next</a>
-            </div>
-         </div>
-      </div>
-      <div id="solution" data-role="page" data-theme='b'>
-         <div data-role="header" data-position="fixed" data-tap-toggle="false" data-theme='b'>
-            <h1>mLEARNING</h1>
-            <a href="index.html" data-ajax='false' ><i class='fa fa-android'></i></a>
-         </div>
-         <div data-role="panel" data-display="push" id="mypanel4" data-theme="b">
-            <ul data-role="listview">
-               <li>Materi</li>
-               <li data-icon='false'><a href="#facts" data-transition="slide">Fact VS Opinion</a></li>
-               <li data-icon='false'><a href="#op">Giving Opinion</a></li>
-               <li data-icon='false'><a href="#expression" data-transition="slide">Expression</a></li>
-               <li data-icon='false'><a href="#" data-transition="slide">Problem & Solution</a></li>
-               <li data-icon='false'><a href="#tag" data-transition="slide">Tag Question</a></li>
-            </ul>
-         </div>
-         <div data-role="content">
-            <div class='inset'>
-               <a href="#mypanel4" data-role='button' data-inline='true'><i class='lIcon fa fa-bars'></i>Problem & Solution</a>
-               <p>Look at the picture!</p>
-               <p>
-               	<strong>Problem:</strong> People texting while driving.<br/>
-						<strong>Solution:</strong> Stop it. Turn off the mobile phone and try to drive slowly.
-               </p>
-               <p>
-               	<strong>Problem:</strong> Someone getting bullied.<br/>
-						<strong>Solution:</strong> Try to stop it, don’t let it happen.
-               </p>
-               <p>
-						<strong>Quiz 4 :</strong><br/>
-						Any problem that students brawl in classroom. If you are a student in this class, what will you do?
-                  <textarea name="solution" id="textarea2" placeholder="Your solution is . . ." required></textarea>
-					</p>
-					<a href="#tag" data-transition="slide" data-inline='false' data-role="button">Next</a>
-            </div>
-         </div>
-      </div>
-      <div id="tag" data-role="page" data-theme='b'>
-         <div data-role="header" data-position="fixed" data-tap-toggle="false" data-theme='b'>
-            <h1>mLEARNING</h1>
-            <a href="index.html" data-ajax='false' ><i class='fa fa-android'></i></a>
-         </div>
-         <div data-role="panel" data-display="push" id="mypanel5" data-theme="b">
-            <ul data-role="listview">
-               <li>Materi</li>
-               <li data-icon='false'><a href="#facts" data-transition="slide">Fact VS Opinion</a></li>
-               <li data-icon='false'><a href="#op">Giving Opinion</a></li>
-               <li data-icon='false'><a href="#expression" data-transition="slide">Expression</a></li>
-               <li data-icon='false'><a href="#solution" data-transition="slide">Problem & Solution</a></li>
-               <li data-icon='false'><a href="#" data-transition="slide">Tag Question</a></li>
-            </ul>
-         </div>
-         <div data-role="content">
-            <div class='inset'>
-               <a href="#mypanel5" data-role='button' data-inline='true'><i class='lIcon fa fa-bars'></i>Tag Question</a>
-               <p>Tag question (also known as <strong>tail question</strong>) is a grammatical structure in which a <u>declarative</u> statement or an <u>imperative</u> is turned into a question by adding an <u>interrogative</u> fragment (the "tag").</p>
-					<strong>For example:</strong>
-					<ul>
-					<li>Televisions should show more educational programs, <strong>shouldn’t they?</strong></li>
-					<li>There are a lot of crimes in cities, <strong>aren’t there?</strong></li>
-					<li>Rubbish makes the city ugly, <strong>doesn’t it?</strong></li>
-					<li>School fee is really expensive, <strong>isn’it?</strong></li>
-					<li>Many people don’t care about our town, <strong>do they?</strong></li>
-					<li>You can’t have a free schooling, <strong>can you?</strong></li>
-					<li>Edcatio isn’t cheap, <strong>is it?</strong></li>
-					<li>There are not enough public parks in this town, <strong>are there?</strong></li>
-					<li>She can hardly see without her glasses, <strong>can she?</strong></li>
-					</ul>
-
-               <p>
-						<strong>Quiz 5 :</strong><br/>
-						Based on the examples, you can answer the questions below.
+            <div data-role="content">
+               <div class='inset'>
+                  <a href="#mypanel2" data-role='button' data-inline='true'><i class='lIcon fa fa-bars'></i>Giving Opinion</a>
+                  <p>
+                  Look at the picture and discuss the questions that follow please! And than shared to the others.<br/>
+                  <img src="img/1.jpg" alt="" style="max-width:35%;height:auto;">
+                  <img src="img/4.jpg" alt="" style="max-width:60%;height:auto;">
                   <ul>
-                  	<li>
-                  		When the statement is in positive-form, the tag question should be in 
-                  		<input type="text" name="name1" id="name1" value="" data-clear-btn="true" placeholder="Your answer is..." required>
-                  	</li>
-                  	<li>
-                  		When the statement is in negative-form, the tag question should be in
-                  		<input type="text" name="name2" id="name2" value="" data-clear-btn="true" placeholder="Your answer is..." required>
-                  	</li>
-                  	<li>
-                  		When the statement has an auxiliary, the tag repeats 
-                  		<input type="text" name="name3" id="name3" value="" data-clear-btn="true" placeholder="Your answer is..." required>
-                  	</li>
+                     <li>What are the people trying to convey?</li>
+                     <li>Do you think they are expressing personal opinions?</li>
+                     <li>What expressions do you use to inquire an opinion?</li>
+                     <li>What expressions do you use to offer a different opinion?</li>
                   </ul>
-					</p>
-					<a href="#tag" data-transition="slide" data-inline='false' data-role="button">Next</a>
+                  </p>
+                  <p>
+                  <strong>What is an opinion?</strong><br/>
+                  An opinion is the way you feel or think about something. Our opinion about something or someone is based on our perspective. Whenever we give or express our opinion it is important to give reasoning or an example to support our opinion.<br/><br/>
+                  </p>
+                  <p>
+                  <strong>Indicating Opinion</strong><br/>
+                  I think...<br/>
+                  In my opinion...<br/>
+                  I feel...<br/>
+                  to my mind...<br/>
+                  I guess...<br/>
+                  ect.<br/><br/>
+                  </p>
+                  <p>
+                  <strong>Statement</strong><br/>
+                  <strong>Student A:</strong> I don't like playing tag because people end up fighting.<br/>
+                  <strong>Student B:</strong> In my opinion, the government should provide means of sustenance for under privileged people instead of building tall towers.<br/><br/>
+                  </p>
+                  # Student A give a <strong>statement</strong> and Student B give an <strong>opinion</strong> about that statement.<br/><br/>
+                  <p>
+                  <strong>Quiz 2 :</strong><br/>
+                  Give your opinions by completing the sentences positively or negatively.
+                  <ul>
+                     <li>
+                        Students . . . . . to use cellphones in the classroom.
+                        <fieldset data-role="controlgroup">
+                           <input type="radio" name="rdo2" id="radio-choice-3b" value="a">
+                           <label for="radio-choice-3b">a. shouldn't be allow</label>
+                           <input type="radio" name="rdo2" id="radio-choice-4b" value="b">
+                           <label for="radio-choice-4b">b. musn't be passed</label>
+                           <input type="radio" name="rdo2" id="radio-choice-5b" value="c">
+                           <label for="radio-choice-5b">c. has got to be done</label>
+                        </fieldset>
+                     </li>
+                     <li>
+                        Laws . . . . . to control TV shows.
+                        <fieldset data-role="controlgroup">
+                           <input type="radio" name="rdo3" id="radio-choice-6b" value="a">
+                           <label for="radio-choice-6b">a. shouldn't be allow</label>
+                           <input type="radio" name="rdo3" id="radio-choice-7b" value="b">
+                           <label for="radio-choice-7b">b. musn't be passed</label>
+                           <input type="radio" name="rdo3" id="radio-choice-8b" value="c">
+                           <label for="radio-choice-8b">c. has got to be done</label>
+                        </fieldset>
+                     </li>
+                     <li>
+                        Something . . . . . to stop bullying at schools.
+                        <fieldset data-role="controlgroup">
+                           <input type="radio" name="rdo4" id="radio-choice-9b" value="a">
+                           <label for="radio-choice-9b">a. shouldn't be allow</label>
+                           <input type="radio" name="rdo4" id="radio-choice-10b" value="b">
+                           <label for="radio-choice-10b">b. musn't be passed</label>
+                           <input type="radio" name="rdo4" id="radio-choice-11b" value="c">
+                           <label for="radio-choice-11b">c. has got to be done</label>
+                        </fieldset>
+                     </li>
+                  </ul>
+                  </p>
+                  <a href="#expression" data-transition="slide" data-inline='false' data-role="button">Next</a>
+               </div>
             </div>
          </div>
-      </div>
-   </form>
+         <div id="expression" data-role="page" data-theme='b'>
+            <div data-role="header" data-position="fixed" data-tap-toggle="false" data-theme='b'>
+               <h1>mLEARNING</h1>
+               <a href="index.html" data-ajax='false' ><i class='fa fa-android'></i></a>
+            </div>
+            <div data-role="panel" data-display="push" id="mypanel3" data-theme="b">
+               <ul data-role="listview">
+                  <li>Materi</li>
+                  <li data-icon='false'><a href="#facts" data-transition="slide">Fact VS Opinion</a></li>
+                  <li data-icon='false'><a href="#op">Giving Opinion</a></li>
+                  <li data-icon='false'><a href="#" data-transition="slide">Expression</a></li>
+                  <li data-icon='false'><a href="#solution" data-transition="slide">Problem & Solution</a></li>
+                  <li data-icon='false'><a href="#tag" data-transition="slide">Tag Question</a></li>
+                  <li data-icon='false'><a href="#result" data-transition="slide">Result</a></li>
+               </ul>
+            </div>
+            <div data-role="content">
+               <div class='inset'>
+                  <a href="#mypanel3" data-role='button' data-inline='true'><i class='lIcon fa fa-bars'></i>Expression</a>
+                  <p>Opinions can be expressed in the ways given below:</p>
+                  <ul>
+                     <li>
+                        <strong>Personal Point of View</strong>
+                        <p>
+                        These expressions are used to show personal point of view.
+                        </p>
+                        <strong>You can use this phrases:</strong><br/>
+                        <p style="margin-left:20px;">
+                        In my opinion...<br/>
+                        I think...<br/>
+                        Personally, I think...<br/>
+                        According to me...<br/>
+                        As I understand...<br/>
+                        What I mean is...<br/>
+                        To my mind...<br/>
+                        As I see it...<br/>
+                        ect.
+                        </p>
+                        <p>
+                        <strong>For examples :</strong><br/>
+                        <strong>In my opinion</strong>, big companies should pay less tax.<br/>
+                        <strong>I think</strong> Yogyakarta is developing fast.
+                        </p>
+                     </li>
+                     <li>
+                        <strong>General Point of view</strong>
+                        <p>These expressions are used to show general (some peoples) point of view. General point of view creates a balace in writing and helps to avoid absolute statements.</p>
+                        <strong>You can use this phrases:</strong><br/>
+                        <p style="margin-left:20px;">
+                        Generally it is accepted...<br/>
+                        Majority agree with...<br/>
+                        It is considered...<br/>
+                        Most people don't agree...<br/>
+                        Almost everyone...<br/>
+                        Some people believe...<br/>
+                        ect.
+                        </p>
+                        <p>
+                        <strong>DID YOU KNOW?</strong><br/>
+                        You can agree or disagree as long as you have reason for you opinion.
+                        </p>
+                     </li>
+                     <li>
+                        <strong>Agreeing</strong>
+                        <p>These are some of the expressions used to express <strong>agreement with an opinion.</strong></p>
+                        <strong>You can use this phrases:</strong><br/>
+                        <p style="margin-left:20px;">
+                        Of course.<br/>
+                        I agree. I never thought of that.<br/>
+                        Neither do I.<br/>
+                        That's a good point.<br/>
+                        I think so too.<br/>
+                        I agree with this opinion.<br/>
+                        I couldn't agree more.<br/>
+                        ect.
+                        </p>
+                     </li>
+                     <li>
+                        <strong>Disagreeing</strong>
+                        <p>These are the expressions used to express <strong>disagreement with an opinion.</strong></p>
+                        <strong>You can use this phrases:</strong><br/>
+                        <p style="margin-left:20px;">
+                        I disagree with you.<br/>
+                        I think you are wrong.<br/>
+                        I am sorry, I don't agree with you.<br/>
+                        I do not believe that.<br/>
+                        By this I mean...<br/>
+                        ect.
+                        </p>
+                        <p>
+                        For examples:<br/>
+                        <strong>Statement:</strong><br/>
+                        &nbsp;&nbsp;&nbsp;Using handphone should be banned in the schools.<br/>
+                        <strong>Agree:</strong><br/>
+                        &nbsp;&nbsp;&nbsp;<u>I totally agree</u> that using handphone should be banned in school.<br/>
+                        <strong>Disagree:</strong><br/>
+                        &nbsp;&nbsp;&nbsp;<u>I don't agree</u> with you. Handphone is usful for student to develop their language skills.
+                        <p><br/>
+                        <p>
+                        <strong>NOW, YOU KNOW</strong><br/>
+                        Opinions can be expressed using mental verbs like believe, think, doubt, assume, feel,  ect.
+                        </p>
+                     </li>
+                  </ul>
+                  <p>
+                  <strong>Quiz 3 :</strong><br/>
+                  For exercise, please write your opinion and the reason about the picture below!<br/>
+						<img src="img/7.jpg" alt="" style="max-width:100%;height:auto;">
+                  <label for="textarea2b">Your opinion :</label>
+                  <textarea name="opinion" id="textarea1" placeholder="Your opinion is . . ."></textarea>
+                  </p>
+                  <a href="#solution" data-transition="slide" data-inline='false' data-role="button">Next</a>
+               </div>
+            </div>
+         </div>
+         <div id="solution" data-role="page" data-theme='b'>
+            <div data-role="header" data-position="fixed" data-tap-toggle="false" data-theme='b'>
+               <h1>mLEARNING</h1>
+               <a href="index.html" data-ajax='false' ><i class='fa fa-android'></i></a>
+            </div>
+            <div data-role="panel" data-display="push" id="mypanel4" data-theme="b">
+               <ul data-role="listview">
+                  <li>Materi</li>
+                  <li data-icon='false'><a href="#facts" data-transition="slide">Fact VS Opinion</a></li>
+                  <li data-icon='false'><a href="#op">Giving Opinion</a></li>
+                  <li data-icon='false'><a href="#expression" data-transition="slide">Expression</a></li>
+                  <li data-icon='false'><a href="#" data-transition="slide">Problem & Solution</a></li>
+                  <li data-icon='false'><a href="#tag" data-transition="slide">Tag Question</a></li>
+                  <li data-icon='false'><a href="#result" data-transition="slide">Result</a></li>
+               </ul>
+            </div>
+            <div data-role="content">
+               <div class='inset'>
+                  <a href="#mypanel4" data-role='button' data-inline='true'><i class='lIcon fa fa-bars'></i>Problem & Solution</a>
+                  <p>Look at the picture! <img src="img/5.jpg" alt="" style="max-width:100%;height:auto;"></p>
+                  <p>
+                  <strong>Problem:</strong> People texting while driving.<br/>
+                  <strong>Solution:</strong> Stop it. Turn off the mobile phone and try to drive slowly.
+                  <img src="img/3.jpg" alt="" style="max-width:100%;height:auto;">	
+                  </p>
+                  <p>
+                  <strong>Problem:</strong> Someone getting bullied.<br/>
+                  <strong>Solution:</strong> Try to stop it, don't let it happen.
+                  </p>
+                  <p>
+                  <strong>Quiz 4 :</strong><br/>
+                  Any problem that students brawl in classroom. If you are a student in this class, what will you do?
+                  <textarea name="solution" id="textarea2" placeholder="Your solution is . . ."></textarea>
+                  </p>
+                  <a href="#tag" data-transition="slide" data-inline='false' data-role="button">Next</a>
+               </div>
+            </div>
+         </div>
+         <div id="tag" data-role="page" data-theme='b'>
+            <div data-role="header" data-position="fixed" data-tap-toggle="false" data-theme='b'>
+               <h1>mLEARNING</h1>
+               <a href="index.html" data-ajax='false' ><i class='fa fa-android'></i></a>
+            </div>
+            <div data-role="panel" data-display="push" id="mypanel5" data-theme="b">
+               <ul data-role="listview">
+                  <li>Materi</li>
+                  <li data-icon='false'><a href="#facts" data-transition="slide">Fact VS Opinion</a></li>
+                  <li data-icon='false'><a href="#op">Giving Opinion</a></li>
+                  <li data-icon='false'><a href="#expression" data-transition="slide">Expression</a></li>
+                  <li data-icon='false'><a href="#solution" data-transition="slide">Problem & Solution</a></li>
+                  <li data-icon='false'><a href="#" data-transition="slide">Tag Question</a></li>
+                  <li data-icon='false'><a href="#result" data-transition="slide">Result</a></li>
+               </ul>
+            </div>
+            <div data-role="content">
+               <div class='inset'>
+                  <a href="#mypanel5" data-role='button' data-inline='true'><i class='lIcon fa fa-bars'></i>Tag Question</a>
+                  <p>Tag question (also known as <strong>tail question</strong>) is a grammatical structure in which a <u>declarative</u> statement or an <u>imperative</u> is turned into a question by adding an <u>interrogative</u> fragment (the "tag").</p>
+                  <strong>For example:</strong>
+                  <ul>
+                     <li>Televisions should show more educational programs, <strong>shouldn't they?</strong></li>
+                     <li>There are a lot of crimes in cities, <strong>aren't there?</strong></li>
+                     <li>Rubbish makes the city ugly, <strong>doesn't it?</strong></li>
+                     <li>School fee is really expensive, <strong>isn'it?</strong></li>
+                     <li>Many people don't care about our town, <strong>do they?</strong></li>
+                     <li>You can't have a free schooling, <strong>can you?</strong></li>
+                     <li>Edcatio isn't cheap, <strong>is it?</strong></li>
+                     <li>There are not enough public parks in this town, <strong>are there?</strong></li>
+                     <li>She can hardly see without her glasses, <strong>can she?</strong></li>
+                  </ul>
+                  <p>
+                  <strong>Quiz 5 :</strong><br/>
+                  Based on the examples, you can answer the questions below.
+                  <ul>
+                     <li>
+                        When the statement is in positive-form, the tag question should be in
+                        <input type="text" name="name1" id="name1" value="" placeholder="Your answer is...">
+                     </li>
+                     <li>
+                        When the statement is in negative-form, the tag question should be in
+                        <input type="text" name="name2" id="name2" value="" placeholder="Your answer is...">
+                     </li>
+                     <!-- 
+                     <li>
+                        When the statement has an auxiliary, the tag repeats
+                        <input type="text" name="name3" id="name3" value="" placeholder="Your answer is...">
+                     </li> 
+                  	-->
+                  </ul>
+                  </p>
+                  <a href="#result" data-transition="slide" data-inline='false' data-role="button">Next</a>
+               </div>
+            </div>
+         </div>
+         <div id="result" data-role="page" data-theme='b'>
+            <div data-role="header" data-position="fixed" data-tap-toggle="false" data-theme='b'>
+               <h1>mLEARNING</h1>
+               <a href="index.html" data-ajax='false' ><i class='fa fa-android'></i></a>
+            </div>
+            <div data-role="panel" data-display="push" id="mypanel6" data-theme="b">
+               <ul data-role="listview">
+                  <li>Materi</li>
+                  <li data-icon='false'><a href="#facts" data-transition="slide">Fact VS Opinion</a></li>
+                  <li data-icon='false'><a href="#op">Giving Opinion</a></li>
+                  <li data-icon='false'><a href="#expression" data-transition="slide">Expression</a></li>
+                  <li data-icon='false'><a href="#solution" data-transition="slide">Problem & Solution</a></li>
+                  <li data-icon='false'><a href="#tag" data-transition="slide">Tag Question</a></li>
+                  <li data-icon='false'><a href="#" data-transition="slide">Result</a></li>
+               </ul>
+            </div>
+            <div data-role="content">
+               <div class='inset'>
+                  <a href="#mypanel6" data-role='button' data-inline='true'><i class='lIcon fa fa-bars'></i>Result</a>
+                  <a href="" data-role="button" onclick="alert('result here');">Show Result</a>
+               </div>
+            </div>
+         </div>
+      </form>
    </body>
 </html>
