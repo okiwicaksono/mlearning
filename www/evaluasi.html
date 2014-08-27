@@ -29,15 +29,15 @@
             </div>
             <div data-role="panel" data-display="push" id="mypanel1" data-theme="b">
                <ul data-role="listview">
-                  <li>Evaluasi</li>
-                  <li data-icon='false'><a href="#">Formative Evaluation</a></li>
-                  <li data-icon='false'><a href="#ref" data-transition="slide">Self Reflection</a></li>
+                  <li>EVALUATION</li>
+                  <li data-icon='false'><a href="#">Examination</a></li>
                   <li data-icon='false'><a href="#result" data-transition="slide">Result</a></li>
                </ul>
             </div>
             <div data-role="content">
                <div class='inset'>
-                  <a href="#mypanel1" data-role='button' data-inline='true'><i class='lIcon fa fa-bars'></i>Formative Evaluation</a>
+                  <a href="#mypanel1" data-role='button' data-inline='true'><i class='lIcon fa fa-bars'></i>Examination</a>
+                  <p>Read these questions carefully. For each question, choose the one best answer.</p>
                   <ul>
 	                  <li>
 	                  	Companies . . . . to give employees longer annual leaves.
@@ -68,7 +68,7 @@
 		                     <input type="radio" name="rdo3" id="radio-choice-7b" value="a">
 		                     <label for="radio-choice-7b">a. do demonstration</label>
 		                     <input type="radio" name="rdo3" id="radio-choice-8b" value="b">
-		                     <label for="radio-choice-8b">b. join to many ex-school ctivities</label>
+		                     <label for="radio-choice-8b">b. didn’t join to many ex-school ctivities</label>
 		                     <input type="radio" name="rdo3" id="radio-choice-9b" value="c">
 		                     <label for="radio-choice-9b">c. use handphone in class</label>
 		                  </fieldset>
@@ -141,7 +141,7 @@
 		                  </fieldset>
 	                  </li>
 	                  <li>
-	                  	The sentence below  is an advise or suggestion.
+	                  	The sentence below  is an suggestion.
 	                  	<fieldset data-role="controlgroup">
 		                     <input type="radio" name="rdo10" id="radio-choice-28b" value="a">
 		                     <label for="radio-choice-28b">a. Smoking should be banned in the schools.</label>
@@ -152,7 +152,7 @@
 		                  </fieldset>
 	                  </li>
 	               </ul>
-                  <a href="#ref" data-transition="slide" data-inline='false' data-role="button">Next</a>
+                  <a href="#result" data-transition="slide" data-inline='false' data-role="button">Next</a>
                </div>
             </div>
          </div>
@@ -163,9 +163,8 @@
             </div>
             <div data-role="panel" data-display="push" id="mypanel2" data-theme="b">
                <ul data-role="listview">
-                  <li>Evaluasi</li>
-                  <li data-icon='false'><a href="#formative">Formative Evaluation</a></li>
-                  <li data-icon='false'><a href="#" data-transition="slide">Self Reflection</a></li>
+                  <li>EVALUATION</li>
+                  <li data-icon='false'><a href="#formative">Examination</a></li>
                   <li data-icon='false'><a href="#result" data-transition="slide">Result</a></li>
                </ul>
             </div>
@@ -176,7 +175,7 @@
                   	The world is looking a glass and gives back to every man the reflection of his own face. Remains confident.
 						</p>
 						<img src="img/6.jpg" alt="" style="max-width:100%;height:auto;">
-                  <a href="#result" data-transition="slide" data-inline='false' data-role="button">Next</a>
+                  <a href="#result" data-transition="slide" data-inline='false' data-role="button">Back</a>
                </div>
             </div>
          </div>
@@ -187,9 +186,8 @@
             </div>
             <div data-role="panel" data-display="push" id="mypanel6" data-theme="b">
                <ul data-role="listview">
-                  <li>Evaluasi</li>
-                  <li data-icon='false'><a href="#formative">Formative Evaluation</a></li>
-                  <li data-icon='false'><a href="#ref" data-transition="slide">Self Reflection</a></li>
+                  <li>EVALUATION</li>
+                  <li data-icon='false'><a href="#formative">Examination</a></li>
                   <li data-icon='false'><a href="#" data-transition="slide">Result</a></li>
                </ul>
             </div>
@@ -197,7 +195,8 @@
                <div class='inset'>
                   <a href="#mypanel6" data-role='button' data-inline='true'><i class='lIcon fa fa-bars'></i>Result</a>
                   <a href="#" data-role="button" id="checkresult">Show Your Result</a>
-                  <p>Score : <span id="viewresult" style="font-weight:bold;"></span></p>
+                  <p>Total Score : <span id="viewresult" style="font-weight:bold;"></span></p>
+                  <a href="#ref" data-role="button" id="self" style="display:none;">Self Reflection</a>
                </div>
             </div>
          </div>
@@ -216,9 +215,10 @@
                rdo7 = ($('input[name="rdo7"]:checked').val()=='b')?1:0;
                rdo8 = ($('input[name="rdo8"]:checked').val()=='b')?1:0;
                rdo9 = ($('input[name="rdo9"]:checked').val()=='b')?1:0;
-               rdo10 = ($('input[name="rdo10"]:checked').val()=='c')?1:0;
+               rdo10 = ($('input[name="rdo10"]:checked').val()=='a')?1:0;
                
                $("#viewresult").html(rdo1+rdo2+rdo3+rdo4+rdo5+rdo6+rdo7+rdo8+rdo9+rdo10);
+               document.getElementById("self").style.display = "block";
             }
       </script>
    </body>
