@@ -21,17 +21,18 @@
       <script src="js/jquery.mobile-1.4.3.min.js"></script>
    </head>
    <body>
+   	<span id="dummy"></span>
       <form action="#">
          <div id="formative" data-role="page" data-theme='b'>
             <div data-role="header" data-position="fixed" data-tap-toggle="false" data-theme='b'>
                <h1>mLEARNING</h1>
-               <a href="index.html" data-ajax='false' ><i class='fa fa-android'></i></a>
+               <a href="index.html" data-ajax='false' onclick="javascript: playSound('Effect_Tick.ogg');" ><i class='fa fa-android'></i></a>
             </div>
             <div data-role="panel" data-display="push" id="mypanel1" data-theme="b">
                <ul data-role="listview">
                   <li>EVALUATION</li>
-                  <li data-icon='false'><a href="#">Examination</a></li>
-                  <li data-icon='false'><a href="#result" data-transition="slide">Result</a></li>
+                  <li data-icon='false'><a href="#" onclick="javascript: playSound('Effect_Tick.ogg');">Examination</a></li>
+                  <li data-icon='false'><a href="#result" data-transition="slide" onclick="javascript: playSound('Effect_Tick.ogg');">Result</a></li>
                </ul>
             </div>
             <div data-role="content">
@@ -152,20 +153,20 @@
 		                  </fieldset>
 	                  </li>
 	               </ul>
-                  <a href="#result" data-transition="slide" data-inline='false' data-role="button">Next</a>
+                  <a href="#result" data-transition="slide" data-inline='false' data-role="button" onclick="javascript: playSound('Effect_Tick.ogg');">Next</a>
                </div>
             </div>
          </div>
          <div id="ref" data-role="page" data-theme='b'>
             <div data-role="header" data-position="fixed" data-tap-toggle="false" data-theme='b'>
                <h1>mLEARNING</h1>
-               <a href="index.html" data-ajax='false' ><i class='fa fa-android'></i></a>
+               <a href="index.html" data-ajax='false' onclick="javascript: playSound('Effect_Tick.ogg');" ><i class='fa fa-android'></i></a>
             </div>
             <div data-role="panel" data-display="push" id="mypanel2" data-theme="b">
                <ul data-role="listview">
                   <li>EVALUATION</li>
-                  <li data-icon='false'><a href="#formative">Examination</a></li>
-                  <li data-icon='false'><a href="#result" data-transition="slide">Result</a></li>
+                  <li data-icon='false'><a href="#formative" onclick="javascript: playSound('Effect_Tick.ogg');">Examination</a></li>
+                  <li data-icon='false'><a href="#result" data-transition="slide" onclick="javascript: playSound('Effect_Tick.ogg');">Result</a></li>
                </ul>
             </div>
             <div data-role="content">
@@ -175,20 +176,20 @@
                   	The world is looking a glass and gives back to every man the reflection of his own face. Remains confident.
 						</p>
 						<img src="img/6.jpg" alt="" style="max-width:100%;height:auto;">
-                  <a href="#result" data-transition="slide" data-inline='false' data-role="button">Back</a>
+                  <a href="#result" data-transition="slide" data-inline='false' data-role="button" onclick="javascript: playSound('Effect_Tick.ogg');">Back</a>
                </div>
             </div>
          </div>
          <div id="result" data-role="page" data-theme='b'>
             <div data-role="header" data-position="fixed" data-tap-toggle="false" data-theme='b'>
                <h1>mLEARNING</h1>
-               <a href="index.html" data-ajax='false' ><i class='fa fa-android'></i></a>
+               <a href="index.html" data-ajax='false' onclick="javascript: playSound('Effect_Tick.ogg');" ><i class='fa fa-android'></i></a>
             </div>
             <div data-role="panel" data-display="push" id="mypanel6" data-theme="b">
                <ul data-role="listview">
                   <li>EVALUATION</li>
-                  <li data-icon='false'><a href="#formative">Examination</a></li>
-                  <li data-icon='false'><a href="#" data-transition="slide">Result</a></li>
+                  <li data-icon='false'><a href="#formative" onclick="javascript: playSound('Effect_Tick.ogg');">Examination</a></li>
+                  <li data-icon='false'><a href="#" data-transition="slide" onclick="javascript: playSound('Effect_Tick.ogg');">Result</a></li>
                </ul>
             </div>
             <div data-role="content">
@@ -196,11 +197,16 @@
                   <a href="#mypanel6" data-role='button' data-inline='true'><i class='lIcon fa fa-bars'></i>Result</a>
                   <a href="#" data-role="button" id="checkresult">Show Your Result</a>
                   <p>Total Score : <span id="viewresult" style="font-weight:bold;"></span></p>
-                  <a href="#ref" data-role="button" id="self" style="display:none;">Self Reflection</a>
+                  <a href="#ref" data-role="button" id="self" style="display:none;" onclick="javascript: playSound('Effect_Tick.ogg');">Self Reflection</a>
                </div>
             </div>
          </div>
       </form>
+      <script language="javascript" type="text/javascript">
+			 function playSound(soundfile) {
+			 	document.getElementById("dummy").innerHTML= "<embed src=\"audio/"+soundfile+"\" hidden=\"true\" autostart=\"true\" loop=\"false\" />";
+			 }
+		</script>
       <script type="text/javascript">
          document.getElementById("checkresult").onclick = validate;
             function validate() {
@@ -216,7 +222,8 @@
                rdo8 = ($('input[name="rdo8"]:checked').val()=='b')?1:0;
                rdo9 = ($('input[name="rdo9"]:checked').val()=='b')?1:0;
                rdo10 = ($('input[name="rdo10"]:checked').val()=='a')?1:0;
-               
+           		
+           		document.getElementById("dummy").innerHTML= "<embed src=\"audio/Effect_Tick.ogg\" hidden=\"true\" autostart=\"true\" loop=\"false\" />";    
                $("#viewresult").html(rdo1+rdo2+rdo3+rdo4+rdo5+rdo6+rdo7+rdo8+rdo9+rdo10);
                document.getElementById("self").style.display = "block";
             }

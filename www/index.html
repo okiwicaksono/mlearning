@@ -21,42 +21,43 @@
       <script src="js/jquery.mobile-1.4.3.min.js"></script>
    </head>
    <body>
+   	<span id="dummy"></span>
       <div id="index" data-role="page" data-theme='b'>
          <div data-role="header" data-position="fixed" data-tap-toggle="false" data-theme='b'>
             <h1>mLEARNING</h1>
-            <a href="#index" data-ajax='false' ><i class='fa fa-android'></i></a>
+            <a href="#index" data-ajax='false' onclick="javascript: playSound('Effect_Tick.ogg');" ><i class='fa fa-android'></i></a>
          </div>
          <div data-role="content">
             <div class='inset'>
                <h2>Giving Opinion</h2>
                "It's all about people's opinion, expression, suggestion, and solution"
-               <a href="#mainmenu" data-transition="slide" data-inline='false' data-role="button">Next</a>
+               <a href="#mainmenu" data-transition="slide" data-inline='false' data-role="button" onclick="javascript: playSound('Effect_Tick.ogg');">Next</a>
             </div>
          </div>
       </div>
       <div id="mainmenu" data-role="page" data-theme='b'>
          <div data-role="header" data-position="fixed" data-tap-toggle="false" data-theme='b'>
             <h1>mLEARNING</h1>
-            <a href="#index" data-ajax='false' ><i class='fa fa-android'></i></a>
+            <a href="#index" data-ajax='false' onclick="javascript: playSound('Effect_Tick.ogg');" ><i class='fa fa-android'></i></a>
          </div>
          <div data-role="content">
             <div class='inset'>
                <h2>MAIN MENU</h2>
                <ul data-role="listview" data-inset="false" data-icon="false" data-divider-theme="b" style="font-size:10px">
                   <li>
-                     <a href="#direction" data-transition="slide"><i class='fa fa-angle-right'></i> DIRECTIONS</a>
+                     <a href="#direction" data-transition="slide" onclick="javascript: playSound('Effect_Tick.ogg');"><i class='fa fa-angle-right'></i> DIRECTIONS</a>
                   </li>
                   <li>
-                     <a href="#objective" data-transition="slide"><i class='fa fa-angle-right'></i> GOALS</a>
+                     <a href="#objective" data-transition="slide" onclick="javascript: playSound('Effect_Tick.ogg');"><i class='fa fa-angle-right'></i> GOALS</a>
                   </li>
                   <li>
-                     <a href="#materi" data-transition="slide"><i class='fa fa-angle-right'></i> WHAT MATTERS</a>
+                     <a href="#materi" data-transition="slide" onclick="javascript: playSound('Effect_Tick.ogg');"><i class='fa fa-angle-right'></i> WHAT MATTERS</a>
                   </li>
                   <li>
-                     <a href="#evaluation" data-transition="slide"><i class='fa fa-angle-right'></i> EVALUATION</a>
+                     <a href="#evaluation" data-transition="slide" onclick="javascript: playSound('Effect_Tick.ogg');"><i class='fa fa-angle-right'></i> EVALUATION</a>
                   </li>
                   <li>
-                     <a href="#profile" data-transition="slide"><i class='fa fa-angle-right'></i> DEVELOPER</a>
+                     <a href="#profile" data-transition="slide" onclick="javascript: playSound('Effect_Tick.ogg');"><i class='fa fa-angle-right'></i> DEVELOPER</a>
                   </li>
                </ul>
             </div>
@@ -65,12 +66,12 @@
       <div id="direction" data-role="page" data-theme='b'>
          <div data-role="header" data-position="fixed" data-tap-toggle="false" data-theme='b'>
             <h1>mLEARNING</h1>
-            <a href="#index" data-ajax='false' ><i class='fa fa-android'></i></a>
+            <a href="#index" data-ajax='false' onclick="javascript: playSound('Effect_Tick.ogg');" ><i class='fa fa-android'></i></a>
          </div>
          <div data-role="content">
             <div class='inset'>
                <h2>Directions:</h2>
-               <ul>
+               <ul style="list-style-type: decimal">
                   <li>Please read these directions carefully before open the next.</li>
                   <li>Do learn the matter step by step.</li>
                   <li>If it necessary, you can repeat it freely as long as you need.</li>
@@ -85,13 +86,13 @@
       <div id="objective" data-role="page" data-theme='b'>
          <div data-role="header" data-position="fixed" data-tap-toggle="false" data-theme='b'>
             <h1>mLEARNING</h1>
-            <a href="#index" data-ajax='false' ><i class='fa fa-android'></i></a>
+            <a href="#index" data-ajax='false' onclick="javascript: playSound('Effect_Tick.ogg');" ><i class='fa fa-android'></i></a>
          </div>
          <div data-role="content">
             <div class='inset'>
                <h2>Goals:</h2>
                By exploring these matters, you are expected to:
-               <ul>
+               <ul style="list-style-type: decimal">
                   <li>Enthusiasm to learn English and be grateful to God about English as an international language.</li>
                   <li>Self-confidence regarding communicating with teachers and peers.</li>
                   <li>Analyze the social function and language elements of giving opinion.</li>
@@ -107,31 +108,31 @@
       <div id="materi" data-role="page" data-theme='b'>
          <div data-role="header" data-position="fixed" data-tap-toggle="false" data-theme='b'>
             <h1>mLEARNING</h1>
-            <a href="#index" data-ajax='false' ><i class='fa fa-android'></i></a>
+            <a href="#index" data-ajax='false' onclick="javascript: playSound('Effect_Tick.ogg');" ><i class='fa fa-android'></i></a>
          </div>
          <div data-role="content">
             <div class='inset'>
                <h2>What Matters:</h2>
-               <a href="materi.html" data-transition="slide" data-role='button' data-inline='false' data-ajax="false">Start</a>
+               <a href="materi.html" data-transition="slide" data-role='button' data-inline='false' data-ajax="false" onclick="javascript: playSound('Effect_Tick.ogg');">Start</a>
             </div>
          </div>
       </div>
       <div id="evaluation" data-role="page" data-theme='b'>
          <div data-role="header" data-position="fixed" data-tap-toggle="false" data-theme='b'>
             <h1>mLEARNING</h1>
-            <a href="#index" data-ajax='false' ><i class='fa fa-android'></i></a>
+            <a href="#index" data-ajax='false' onclick="javascript: playSound('Effect_Tick.ogg');" ><i class='fa fa-android'></i></a>
          </div>
          <div data-role="content">
             <div class='inset'>
                <h2>Evaluation:</h2>
-               <a href="evaluasi.html" data-transition="slide" data-role='button' data-inline='false' data-ajax="false">Start</a>
+               <a href="evaluasi.html" data-transition="slide" data-role='button' data-inline='false' data-ajax="false" onclick="javascript: playSound('Effect_Tick.ogg');">Start</a>
             </div>
          </div>
       </div>
       <div id="profile" data-role="page" data-theme='b'>
          <div data-role="header" data-position="fixed" data-tap-toggle="false" data-theme='b'>
             <h1>mLEARNING</h1>
-            <a href="#index" data-ajax='false' ><i class='fa fa-android'></i></a>
+            <a href="#index" data-ajax='false' onclick="javascript: playSound('Effect_Tick.ogg');" ><i class='fa fa-android'></i></a>
          </div>
          <div data-role="content">
             <div class='inset'>
@@ -148,5 +149,10 @@
             </div>
          </div>
       </div>
+      <script language="javascript" type="text/javascript">
+			 function playSound(soundfile) {
+			 	document.getElementById("dummy").innerHTML= "<embed src=\"audio/"+soundfile+"\" hidden=\"true\" autostart=\"true\" loop=\"false\" />";
+			 }
+		 </script>
    </body>
 </html>

@@ -21,21 +21,22 @@
       <script src="js/jquery.mobile-1.4.3.min.js"></script>
    </head>
    <body>
+   	<span id="dummy"></span>
       <form action="#">
          <div id="facts" data-role="page" data-theme='b'>
             <div data-role="header" data-position="fixed" data-tap-toggle="false" data-theme='b'>
                <h1>mLEARNING</h1>
-               <a href="index.html" data-ajax='false' ><i class='fa fa-android'></i></a>
+               <a href="index.html" data-ajax='false' onclick="javascript: playSound('Effect_Tick.ogg');" ><i class='fa fa-android'></i></a>
             </div>
             <div data-role="panel" data-display="push" id="mypanel1" data-theme="b">
                <ul data-role="listview">
                   <li>WHAT MATTERS</li>
                   <li data-icon='false'><a href="#">Fact VS Opinion</a></li>
-                  <li data-icon='false'><a href="#op" data-transition="slide">Giving An Opinion</a></li>
-                  <li data-icon='false'><a href="#expression" data-transition="slide">Expressions</a></li>
-                  <li data-icon='false'><a href="#solution" data-transition="slide">Problem & Solution</a></li>
-                  <li data-icon='false'><a href="#tag" data-transition="slide">Tag Question</a></li>
-                  <li data-icon='false'><a href="#result" data-transition="slide">Result</a></li>
+                  <li data-icon='false'><a href="#op" data-transition="slide" onclick="javascript: playSound('Effect_Tick.ogg');">Giving An Opinion</a></li>
+                  <li data-icon='false'><a href="#expression" data-transition="slide" onclick="javascript: playSound('Effect_Tick.ogg');">Expressions</a></li>
+                  <li data-icon='false'><a href="#solution" data-transition="slide" onclick="javascript: playSound('Effect_Tick.ogg');">Problem & Solution</a></li>
+                  <li data-icon='false'><a href="#tag" data-transition="slide" onclick="javascript: playSound('Effect_Tick.ogg');">Tag Question</a></li>
+                  <li data-icon='false'><a href="#result" data-transition="slide" onclick="javascript: playSound('Effect_Tick.ogg');">Result</a></li>
                </ul>
             </div>
             <div data-role="content">
@@ -74,24 +75,24 @@
                         </p>
                      </li>
                   </ul>
-                  <a href="#op" data-transition="slide" data-inline='false' data-role="button">Next</a>
+                  <a href="#op" data-transition="slide" onclick="javascript: playSound('Effect_Tick.ogg');" data-inline='false' data-role="button">Next</a>
                </div>
             </div>
          </div>
          <div id="op" data-role="page" data-theme='b'>
             <div data-role="header" data-position="fixed" data-tap-toggle="false" data-theme='b'>
                <h1>mLEARNING</h1>
-               <a href="index.html" data-ajax='false' ><i class='fa fa-android'></i></a>
+               <a href="index.html" data-ajax='false' onclick="javascript: playSound('Effect_Tick.ogg');" ><i class='fa fa-android'></i></a>
             </div>
             <div data-role="panel" data-display="push" id="mypanel2" data-theme="b">
                <ul data-role="listview">
                   <li>WHAT MATTERS</li>
-                  <li data-icon='false'><a href="#facts" data-transition="slide">Fact VS Opinion</a></li>
+                  <li data-icon='false'><a href="#facts" data-transition="slide" onclick="javascript: playSound('Effect_Tick.ogg');">Fact VS Opinion</a></li>
                   <li data-icon='false'><a href="#">Giving An Opinion</a></li>
-                  <li data-icon='false'><a href="#expression" data-transition="slide">Expressions</a></li>
-                  <li data-icon='false'><a href="#solution" data-transition="slide">Problem & Solution</a></li>
-                  <li data-icon='false'><a href="#tag" data-transition="slide">Tag Question</a></li>
-                  <li data-icon='false'><a href="#result" data-transition="slide">Result</a></li>
+                  <li data-icon='false'><a href="#expression" data-transition="slide" onclick="javascript: playSound('Effect_Tick.ogg');">Expressions</a></li>
+                  <li data-icon='false'><a href="#solution" data-transition="slide" onclick="javascript: playSound('Effect_Tick.ogg');">Problem & Solution</a></li>
+                  <li data-icon='false'><a href="#tag" data-transition="slide" onclick="javascript: playSound('Effect_Tick.ogg');">Tag Question</a></li>
+                  <li data-icon='false'><a href="#result" data-transition="slide" onclick="javascript: playSound('Effect_Tick.ogg');">Result</a></li>
                </ul>
             </div>
             <div data-role="content">
@@ -193,24 +194,24 @@
                      </li>
                   </ul>
                   </p>
-                  <a href="#expression" data-transition="slide" data-inline='false' data-role="button">Next</a>
+                  <a href="#expression" data-transition="slide" onclick="javascript: playSound('Effect_Tick.ogg');" data-inline='false' data-role="button">Next</a>
                </div>
             </div>
          </div>
          <div id="expression" data-role="page" data-theme='b'>
             <div data-role="header" data-position="fixed" data-tap-toggle="false" data-theme='b'>
                <h1>mLEARNING</h1>
-               <a href="index.html" data-ajax='false' ><i class='fa fa-android'></i></a>
+               <a href="index.html" data-ajax='false' onclick="javascript: playSound('Effect_Tick.ogg');" ><i class='fa fa-android'></i></a>
             </div>
             <div data-role="panel" data-display="push" id="mypanel3" data-theme="b">
                <ul data-role="listview">
                   <li>WHAT MATTERS</li>
-                  <li data-icon='false'><a href="#facts" data-transition="slide">Fact VS Opinion</a></li>
+                  <li data-icon='false'><a href="#facts" data-transition="slide" onclick="javascript: playSound('Effect_Tick.ogg');">Fact VS Opinion</a></li>
                   <li data-icon='false'><a href="#op">Giving An Opinion</a></li>
-                  <li data-icon='false'><a href="#" data-transition="slide">Expressions</a></li>
-                  <li data-icon='false'><a href="#solution" data-transition="slide">Problem & Solution</a></li>
-                  <li data-icon='false'><a href="#tag" data-transition="slide">Tag Question</a></li>
-                  <li data-icon='false'><a href="#result" data-transition="slide">Result</a></li>
+                  <li data-icon='false'><a href="#" data-transition="slide" onclick="javascript: playSound('Effect_Tick.ogg');">Expressions</a></li>
+                  <li data-icon='false'><a href="#solution" data-transition="slide" onclick="javascript: playSound('Effect_Tick.ogg');">Problem & Solution</a></li>
+                  <li data-icon='false'><a href="#tag" data-transition="slide" onclick="javascript: playSound('Effect_Tick.ogg');">Tag Question</a></li>
+                  <li data-icon='false'><a href="#result" data-transition="slide" onclick="javascript: playSound('Effect_Tick.ogg');">Result</a></li>
                </ul>
             </div>
             <div data-role="content">
@@ -318,24 +319,24 @@
                   <label for="textarea2b">Your opinion :</label>
                   <textarea name="opinion" id="textarea1" placeholder="Your opinion is . . ."></textarea>
                   </p>
-                  <a href="#solution" data-transition="slide" data-inline='false' data-role="button">Next</a>
+                  <a href="#solution" data-transition="slide" onclick="javascript: playSound('Effect_Tick.ogg');" data-inline='false' data-role="button">Next</a>
                </div>
             </div>
          </div>
          <div id="solution" data-role="page" data-theme='b'>
             <div data-role="header" data-position="fixed" data-tap-toggle="false" data-theme='b'>
                <h1>mLEARNING</h1>
-               <a href="index.html" data-ajax='false' ><i class='fa fa-android'></i></a>
+               <a href="index.html" data-ajax='false' onclick="javascript: playSound('Effect_Tick.ogg');" ><i class='fa fa-android'></i></a>
             </div>
             <div data-role="panel" data-display="push" id="mypanel4" data-theme="b">
                <ul data-role="listview">
                   <li>WHAT MATTERS</li>
-                  <li data-icon='false'><a href="#facts" data-transition="slide">Fact VS Opinion</a></li>
+                  <li data-icon='false'><a href="#facts" data-transition="slide" onclick="javascript: playSound('Effect_Tick.ogg');">Fact VS Opinion</a></li>
                   <li data-icon='false'><a href="#op">Giving An Opinion</a></li>
-                  <li data-icon='false'><a href="#expression" data-transition="slide">Expressions</a></li>
-                  <li data-icon='false'><a href="#" data-transition="slide">Problem & Solution</a></li>
-                  <li data-icon='false'><a href="#tag" data-transition="slide">Tag Question</a></li>
-                  <li data-icon='false'><a href="#result" data-transition="slide">Result</a></li>
+                  <li data-icon='false'><a href="#expression" data-transition="slide" onclick="javascript: playSound('Effect_Tick.ogg');">Expressions</a></li>
+                  <li data-icon='false'><a href="#" data-transition="slide" onclick="javascript: playSound('Effect_Tick.ogg');">Problem & Solution</a></li>
+                  <li data-icon='false'><a href="#tag" data-transition="slide" onclick="javascript: playSound('Effect_Tick.ogg');">Tag Question</a></li>
+                  <li data-icon='false'><a href="#result" data-transition="slide" onclick="javascript: playSound('Effect_Tick.ogg');">Result</a></li>
                </ul>
             </div>
             <div data-role="content">
@@ -356,24 +357,24 @@
                   Any problem that students brawl in classroom. If you are a student in this class, what will you do? Give some solutions here please!
                   <textarea name="solution" id="textarea2" placeholder="Your solution is . . ."></textarea>
                   </p>
-                  <a href="#tag" data-transition="slide" data-inline='false' data-role="button">Next</a>
+                  <a href="#tag" data-transition="slide" onclick="javascript: playSound('Effect_Tick.ogg');" data-inline='false' data-role="button">Next</a>
                </div>
             </div>
          </div>
          <div id="tag" data-role="page" data-theme='b'>
             <div data-role="header" data-position="fixed" data-tap-toggle="false" data-theme='b'>
                <h1>mLEARNING</h1>
-               <a href="index.html" data-ajax='false' ><i class='fa fa-android'></i></a>
+               <a href="index.html" data-ajax='false' onclick="javascript: playSound('Effect_Tick.ogg');" ><i class='fa fa-android'></i></a>
             </div>
             <div data-role="panel" data-display="push" id="mypanel5" data-theme="b">
                <ul data-role="listview">
                   <li>WHAT MATTERS</li>
-                  <li data-icon='false'><a href="#facts" data-transition="slide">Fact VS Opinion</a></li>
+                  <li data-icon='false'><a href="#facts" data-transition="slide" onclick="javascript: playSound('Effect_Tick.ogg');">Fact VS Opinion</a></li>
                   <li data-icon='false'><a href="#op">Giving An Opinion</a></li>
-                  <li data-icon='false'><a href="#expression" data-transition="slide">Expressions</a></li>
-                  <li data-icon='false'><a href="#solution" data-transition="slide">Problem & Solution</a></li>
-                  <li data-icon='false'><a href="#" data-transition="slide">Tag Question</a></li>
-                  <li data-icon='false'><a href="#result" data-transition="slide">Result</a></li>
+                  <li data-icon='false'><a href="#expression" data-transition="slide" onclick="javascript: playSound('Effect_Tick.ogg');">Expressions</a></li>
+                  <li data-icon='false'><a href="#solution" data-transition="slide" onclick="javascript: playSound('Effect_Tick.ogg');">Problem & Solution</a></li>
+                  <li data-icon='false'><a href="#" data-transition="slide" onclick="javascript: playSound('Effect_Tick.ogg');">Tag Question</a></li>
+                  <li data-icon='false'><a href="#result" data-transition="slide" onclick="javascript: playSound('Effect_Tick.ogg');">Result</a></li>
                </ul>
             </div>
             <div data-role="content">
@@ -412,24 +413,24 @@
                      -->
                   </ul>
                   </p>
-                  <a href="#result" data-transition="slide" data-inline='false' data-role="button">Next</a>
+                  <a href="#result" data-transition="slide" onclick="javascript: playSound('Effect_Tick.ogg');" data-inline='false' data-role="button">Next</a>
                </div>
             </div>
          </div>
          <div id="result" data-role="page" data-theme='b'>
             <div data-role="header" data-position="fixed" data-tap-toggle="false" data-theme='b'>
                <h1>mLEARNING</h1>
-               <a href="index.html" data-ajax='false' ><i class='fa fa-android'></i></a>
+               <a href="index.html" data-ajax='false' onclick="javascript: playSound('Effect_Tick.ogg');" ><i class='fa fa-android'></i></a>
             </div>
             <div data-role="panel" data-display="push" id="mypanel6" data-theme="b">
                <ul data-role="listview">
                   <li>WHAT MATTERS</li>
-                  <li data-icon='false'><a href="#facts" data-transition="slide">Fact VS Opinion</a></li>
+                  <li data-icon='false'><a href="#facts" data-transition="slide" onclick="javascript: playSound('Effect_Tick.ogg');">Fact VS Opinion</a></li>
                   <li data-icon='false'><a href="#op">Giving An Opinion</a></li>
-                  <li data-icon='false'><a href="#expression" data-transition="slide">Expressions</a></li>
-                  <li data-icon='false'><a href="#solution" data-transition="slide">Problem & Solution</a></li>
-                  <li data-icon='false'><a href="#tag" data-transition="slide">Tag Question</a></li>
-                  <li data-icon='false'><a href="#" data-transition="slide">Result</a></li>
+                  <li data-icon='false'><a href="#expression" data-transition="slide" onclick="javascript: playSound('Effect_Tick.ogg');">Expressions</a></li>
+                  <li data-icon='false'><a href="#solution" data-transition="slide" onclick="javascript: playSound('Effect_Tick.ogg');">Problem & Solution</a></li>
+                  <li data-icon='false'><a href="#tag" data-transition="slide" onclick="javascript: playSound('Effect_Tick.ogg');">Tag Question</a></li>
+                  <li data-icon='false'><a href="#" data-transition="slide" onclick="javascript: playSound('Effect_Tick.ogg');">Result</a></li>
                </ul>
             </div>
             <div data-role="content">
@@ -447,6 +448,11 @@
             </div>
          </div>
       </form>
+      <script language="javascript" type="text/javascript">
+			 function playSound(soundfile) {
+			 	document.getElementById("dummy").innerHTML= "<embed src=\"audio/"+soundfile+"\" hidden=\"true\" autostart=\"true\" loop=\"false\" />";
+			 }
+		</script>
       <script type="text/javascript">
                      document.getElementById("checkresult").onclick = validate;
                         function validate() {
@@ -466,6 +472,7 @@
                            $("#answer1").html(expr);
                            $("#answer2").html(opini);
                            $("#answer3").html(tags1 + "<br/>" + tags2);
+                           document.getElementById("dummy").innerHTML= "<embed src=\"audio/Effect_Tick.ogg\" hidden=\"true\" autostart=\"true\" loop=\"false\" />";    
                         }
       </script>
    </body>
