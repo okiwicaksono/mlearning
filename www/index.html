@@ -15,10 +15,7 @@
       <!-- nativeDroid: Light/Dark -->
       <link rel="stylesheet" href="css/jquerymobile.nativedroid.light.css"  id='jQMnDTheme' />
       <!-- nativeDroid: Color Schemes -->
-      <link rel="stylesheet" href="css/jquerymobile.nativedroid.color.green.css" id='jQMnDColor' />
-      <!-- jQuery / jQueryMobile Scripts -->
-      <script src="js/jquery-1.9.1.min.js"></script>
-      <script src="js/jquery.mobile-1.4.3.min.js"></script>
+      <link rel="stylesheet" href="css/jquerymobile.nativedroid.color.bluecus.css" id='jQMnDColor' />
    </head>
    <body>
    	<span id="dummy"></span>
@@ -30,7 +27,7 @@
          <div data-role="content">
             <div class='inset'>
                <h2>Giving Opinion</h2>
-               "It's all about people's opinion, expression, suggestion, and solution"
+               <strong>"It's all about people's opinion, expression, suggestion, and solution"</strong>
                <a href="#mainmenu" data-transition="slide" data-ajax="false" data-inline='false' data-role="button" onclick="javascript: playSound('Effect_Tick.ogg');">Next</a>
             </div>
          </div>
@@ -149,6 +146,9 @@
             </div>
          </div>
       </div>
+      <!-- jQuery / jQueryMobile Scripts -->
+      <script src="js/jquery-1.9.1.min.js"></script>
+      <script src="js/jquery.mobile-1.4.3.min.js"></script>
       <script language="javascript" type="text/javascript">
 			 function playSound(soundfile) {
 			 	document.getElementById("dummy").innerHTML= "<embed src=\"audio/"+soundfile+"\" hidden=\"true\" autostart=\"true\" loop=\"false\" />";
