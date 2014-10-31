@@ -19,7 +19,25 @@
    </head>
    <body>
    	<span id="dummy"></span>
-      <div id="index" data-role="page" data-theme='b'>
+   	<div id="index" data-role="page" data-theme='b'>
+         <div data-role="header" data-position="fixed" data-tap-toggle="false" data-theme='b'>
+            <h1>mLEARNING</h1>
+            <a href="#index" data-ajax='false' onclick="javascript: playSound('Effect_Tick.ogg');" ><i class='fa fa-android'></i></a>
+         </div>
+         <div data-role="content">
+         	<div class='inset'>
+               <h2>SIGN IN</h2>
+               <form class="signin">
+	               <p>Plese sign in to use this application</p>
+	               <p>Email : <input type="email" name="email" id="email" value="" placeholder="Type your email here..."></p>
+	               <p>Name : <input type="text" name="nama" id="nama" value="" data-clear-btn="true" placeholder="Type your name here..."></p>
+	               <p>Education : <input type="text" name="pendidikan" id="pendidikan" value="" data-clear-btn="true" placeholder="Type your education here..."></p>
+	               <button type="submit" data-inline='true'><i class='lIcon fa fa-check'></i>Sign In</button>
+            	</form>
+            </div>
+         </div>
+      </div>
+      <div id="intro" data-role="page" data-theme='b'>
          <div data-role="header" data-position="fixed" data-tap-toggle="false" data-theme='b'>
             <h1>mLEARNING</h1>
             <a href="#index" data-ajax='false' onclick="javascript: playSound('Effect_Tick.ogg');" ><i class='fa fa-android'></i></a>
@@ -150,9 +168,16 @@
       <script src="js/jquery-1.9.1.min.js"></script>
       <script src="js/jquery.mobile-1.4.3.min.js"></script>
       <script language="javascript" type="text/javascript">
-			 function playSound(soundfile) {
+			function playSound(soundfile) {
 			 	document.getElementById("dummy").innerHTML= "<embed src=\"audio/"+soundfile+"\" hidden=\"true\" autostart=\"true\" loop=\"false\" />";
-			 }
-		 </script>
+			}
+		</script>
+		<script type="text/javascript" language="javascript">
+		  	jQuery(document).ready(function() {
+		      //$(".signin").submit( function(e){
+		      	//url:"http://okiwi.uhostfull.com/mlearning/identitas.php"
+		      //});
+		   });
+   	</script>
    </body>
 </html>
