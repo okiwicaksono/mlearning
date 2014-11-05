@@ -27,12 +27,12 @@
          <div data-role="content">
          	<div class='inset'>
                <h2>SIGN IN</h2>
-               <form class="signin">
+               <form name="signin" action="">
 	               <p>Plese sign in to use this application</p>
-	               <p>Email : <input type="email" name="email" id="email" value="" placeholder="Type your email here..."></p>
-	               <p>Name : <input type="text" name="nama" id="nama" value="" data-clear-btn="true" placeholder="Type your name here..."></p>
-	               <p>Education : <input type="text" name="pendidikan" id="pendidikan" value="" data-clear-btn="true" placeholder="Type your education here..."></p>
-	               <button type="submit" data-inline='true'><i class='lIcon fa fa-check'></i>Sign In</button>
+	               <p>Email : <input type="email" name="email" id="email" placeholder="Type your email here..."></p>
+	               <p>Name : <input type="text" name="nama" id="nama" data-clear-btn="true" placeholder="Type your name here..."></p>
+	               <p>Education : <input type="text" name="pendidikan" id="pendidikan" data-clear-btn="true" placeholder="Type your education here..."></p>
+	               <button type="button" data-inline='true' id="signin"><i class='lIcon fa fa-check'></i>Sign In</button>
             	</form>
             </div>
          </div>
@@ -40,7 +40,7 @@
       <div id="intro" data-role="page" data-theme='b'>
          <div data-role="header" data-position="fixed" data-tap-toggle="false" data-theme='b'>
             <h1>mLEARNING</h1>
-            <a href="#index" data-ajax='false' onclick="javascript: playSound('Effect_Tick.ogg');" ><i class='fa fa-android'></i></a>
+            <a href="#intro" data-ajax='false' onclick="javascript: playSound('Effect_Tick.ogg');" ><i class='fa fa-android'></i></a>
          </div>
          <div data-role="content">
             <div class='inset'>
@@ -53,7 +53,7 @@
       <div id="mainmenu" data-role="page" data-theme='b'>
          <div data-role="header" data-position="fixed" data-tap-toggle="false" data-theme='b'>
             <h1>mLEARNING</h1>
-            <a href="#index" data-ajax='false' onclick="javascript: playSound('Effect_Tick.ogg');" ><i class='fa fa-android'></i></a>
+            <a href="#intro" data-ajax='false' onclick="javascript: playSound('Effect_Tick.ogg');" ><i class='fa fa-android'></i></a>
          </div>
          <div data-role="content">
             <div class='inset'>
@@ -81,7 +81,7 @@
       <div id="direction" data-role="page" data-theme='b'>
          <div data-role="header" data-position="fixed" data-tap-toggle="false" data-theme='b'>
             <h1>mLEARNING</h1>
-            <a href="#index" data-ajax='false' onclick="javascript: playSound('Effect_Tick.ogg');" ><i class='fa fa-android'></i></a>
+            <a href="#intro" data-ajax='false' onclick="javascript: playSound('Effect_Tick.ogg');" ><i class='fa fa-android'></i></a>
          </div>
          <div data-role="content">
             <div class='inset'>
@@ -101,7 +101,7 @@
       <div id="objective" data-role="page" data-theme='b'>
          <div data-role="header" data-position="fixed" data-tap-toggle="false" data-theme='b'>
             <h1>mLEARNING</h1>
-            <a href="#index" data-ajax='false' onclick="javascript: playSound('Effect_Tick.ogg');" ><i class='fa fa-android'></i></a>
+            <a href="#intro" data-ajax='false' onclick="javascript: playSound('Effect_Tick.ogg');" ><i class='fa fa-android'></i></a>
          </div>
          <div data-role="content">
             <div class='inset'>
@@ -123,7 +123,7 @@
       <div id="materi" data-role="page" data-theme='b'>
          <div data-role="header" data-position="fixed" data-tap-toggle="false" data-theme='b'>
             <h1>mLEARNING</h1>
-            <a href="#index" data-ajax='false' onclick="javascript: playSound('Effect_Tick.ogg');" ><i class='fa fa-android'></i></a>
+            <a href="#intro" data-ajax='false' onclick="javascript: playSound('Effect_Tick.ogg');" ><i class='fa fa-android'></i></a>
          </div>
          <div data-role="content">
             <div class='inset'>
@@ -135,7 +135,7 @@
       <div id="evaluation" data-role="page" data-theme='b'>
          <div data-role="header" data-position="fixed" data-tap-toggle="false" data-theme='b'>
             <h1>mLEARNING</h1>
-            <a href="#index" data-ajax='false' onclick="javascript: playSound('Effect_Tick.ogg');" ><i class='fa fa-android'></i></a>
+            <a href="#intro" data-ajax='false' onclick="javascript: playSound('Effect_Tick.ogg');" ><i class='fa fa-android'></i></a>
          </div>
          <div data-role="content">
             <div class='inset'>
@@ -147,7 +147,7 @@
       <div id="profile" data-role="page" data-theme='b'>
          <div data-role="header" data-position="fixed" data-tap-toggle="false" data-theme='b'>
             <h1>mLEARNING</h1>
-            <a href="#index" data-ajax='false' onclick="javascript: playSound('Effect_Tick.ogg');" ><i class='fa fa-android'></i></a>
+            <a href="#intro" data-ajax='false' onclick="javascript: playSound('Effect_Tick.ogg');" ><i class='fa fa-android'></i></a>
          </div>
          <div data-role="content">
             <div class='inset'>
@@ -173,11 +173,55 @@
 			}
 		</script>
 		<script type="text/javascript" language="javascript">
-		  	jQuery(document).ready(function() {
-		      //$(".signin").submit( function(e){
-		      	//url:"http://okiwi.uhostfull.com/mlearning/identitas.php"
-		      //});
+		  	$(document).ready(function() {
+		      $("#signin").click( function(event){
+
+		      	var email = $("input#email").val();
+					var nama = $("input#nama").val();
+					var pendidikan = $("input#pendidikan").val();
+					var dataString = '?email='+ email + '&nama=' + nama + '&pendidikan=' + pendidikan;
+
+		      	$.ajax({
+		            type: 'GET',
+		            url:"http://okiwi.uhostfull.com/mlearning/identitas.php",
+		            //url:"http://localhost:83/jm.moblearning.dev/phonegap/www/api.php",
+		            data: dataString,
+		            dataType : 'json',
+		            xhrFields: {
+							withCredentials: true
+						},
+		            success: function( data ){
+		            	setStorage(data);
+		            	location.href = 'index.html#intro';
+		            },
+		            error : function(err){
+		            	alert('Sign in failed');
+					   }
+		        	});
+		      });
 		   });
+
+		   function setStorage(val){
+		   	if(typeof(Storage) !== "undefined"){
+		   		localStorage.setItem("isSigin", val);
+		   	} else {
+		   		alert('No web storage support');
+		   	}
+		   }
+
+		   function getStorage(){
+		   	if(typeof(Storage) !== "undefined"){
+		   		return localStorage.isSigin;
+		   	} else {
+		   		alert('No web storage support');
+		   		return false;
+		   	}
+		   }
+
+		  	if(getStorage() == 'true'){
+		   	location.href = 'index.html#intro';
+		   }
+
    	</script>
    </body>
 </html>

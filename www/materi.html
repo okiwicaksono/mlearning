@@ -453,6 +453,19 @@
 			 function playSound(soundfile) {
 			 	document.getElementById("dummy").innerHTML= "<embed src=\"audio/"+soundfile+"\" hidden=\"true\" autostart=\"true\" loop=\"false\" />";
 			 }
+
+		 	function getStorage(){
+		   	if(typeof(Storage) !== "undefined"){
+		   		return localStorage.isSigin;
+		   	} else {
+		   		alert('No web storage support');
+		   		return false;
+		   	}
+		   }
+
+		   if(getStorage() !== 'true'){
+		   	location.href = 'index.html';
+		   }
 		</script>
       <script type="text/javascript">
                      document.getElementById("checkresult").onclick = validate;
